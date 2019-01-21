@@ -24,7 +24,7 @@ gulp.task('serve', ['sass'], function() {
         server: "./src"
     });
 
-    gulp.watch(['node_modules/materialize-css/dist/css/materialize.css', 'src/scss/*.scss'], ['sass']);
+    gulp.watch(['node_modules/materialize-css/dist/css/materialize.css', 'src/scss/**/*.scss'], ['sass']);
     gulp.watch("src/*.html").on('change', browserSync.reload);
 });
 

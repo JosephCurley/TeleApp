@@ -1,0 +1,56 @@
+
+.navbar-brand {
+	display: inline-block;
+}
+
+.application-wrapper {
+	display: flex;
+	flex-direction: row;
+}
+
+.navbar {
+	display: flex;
+	justify-content: space-between;
+}
+.site-info {
+	display: inline-block;
+}
+/* Side bar */
+.device-sidebar {
+	height: 100%;
+	flex-basis: 240px;
+	display: inline-block;
+}
+
+/* Nav */
+nav {
+	background-color: $main-color;
+}
+
+nav i.nav-icon {
+	display: inline-block;
+}
+
+.nav-item {
+	width: 100%;
+}
+
+.nav-link {
+	display: flex;
+}
+
+.nav-link span{
+  line-height: 56px;
+  vertical-align: top;
+}
+
+/* Window */
+.window-container {
+  margin: 20px;
+	@extend .z-depth-2
+}
+
+.tab-content {
+	flex-grow: 1;
+	flex-basis: 100%;
+}

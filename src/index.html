@@ -1,23 +1,414 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
-    <title>PhytoMark</title>
-    <!--Import Font-->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!-- CSS START -->
-    <link rel="stylesheet" href="css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/materialize.css">
-    <link rel="stylesheet" href="css/style.css">
-    <!-- CSS END -->
-  </head>
-  <body>
 
-    <!-- JS Script Start -->
-    <script src="js/jquery.min.js"></script>
-    <script src="js/materialize.js"></script>
-    <script src="js/main.js"></script>
-    <!-- JS Script End -->
-  </body>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>App</title>
+	<!--Import Font-->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<!-- CSS START -->
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<!-- CSS END -->
+</head>
+
+<body class="fullsize-pill-content style-dual-pane webrtc-available">
+	<div class="alert alert-success initial-show" style="display: none;"><img src="/images/ajax-loader.gif">&nbsp;<strong class="translate">Connecting to AGNES...</strong></div>
+	<main class="container-fluid initial-hide" style="display: block;">
+		<div class="navbar navbar-light bg-light flex-row">
+			<div class="navbar-brand agnes-logo">
+				<img src="./themes/default/agnes-logo.svg" style="height: 75px; width: 300px; margin-left: -50px; margin-bottom: 10px; margin-top: -5px;">
+			</div>
+
+			<div class="site-info">
+				<div class="site-info-fields">
+					<div data-bind="visible: $data.organization">
+						<div class="label"><span class="translate">Organization</span>:</div>
+						<span data-bind="html: $data.organization" class="site-info-data">AGNES default organization</span><br>
+					</div>
+					<div data-bind="visible: $data.station">
+						<div class="label"><span class="translate">Station</span>:</div>
+						<span data-bind="html: $data.station" class="site-info-data">Local AGNES cart</span><br>
+					</div>
+					<div data-bind="visible: $data.shortPatientDescription" id="patient-name" data-original-title="" title="">
+						<!-- div class="label">Patient:</div -->
+						<div id="edit-patient-button">
+							<i class="fa fa-pencil"></i>
+							<span data-bind="text: $data.shortPatientDescription" class="site-info-data">Patient</span>
+						</div>
+					</div>
+				</div>
+				<div data-bind="visible: $data.logoUrlFixed" class="pull-right site-info-logo" style="display: none;">
+					<img data-bind="attr: { src: $data.logoUrlFixed }" src="">
+				</div>
+			</div>
+
+		</div>
+		<div class="application-body">
+			<div class="application-wrapper">
+				<nav class="device-sidebar navbar">
+					<ul class="nav">
+						<li class="nav-item"><a class="nav-link">
+								<i class="large material-icons nav-icon">insert_chart</i>
+								<span class="translate">Camera Control</span></a>
+						</li>
+						<li class="nav-item"><a class="nav-link">
+								<i class="large material-icons nav-icon">insert_chart</i>
+								<span class="translate">Video Conference</span></a>
+						</li>
+						<li class="nav-item"><a class="nav-link">
+								<i class="large material-icons nav-icon">insert_chart</i>
+								<span class="translate">Vitals</span></a>
+						</li>
+						<li class="nav-item"><a class="nav-link">
+								<i class="large material-icons nav-icon">insert_chart</i>
+								<span class="translate">Stethoscope</span></a>
+						</li>
+						<li class="nav-item"><a class="nav-link">
+								<i class="large material-icons nav-icon">insert_chart</i>
+								<span class="translate">Medical Video</span></a>
+						</li>
+						<li class="nav-item"><a class="nav-link">
+								<i class="large material-icons nav-icon">insert_chart</i>
+								<span class="translate">Chat</span></a>
+						</li>
+						<li class="nav-item"><a class="nav-link">
+								<i class="large material-icons nav-icon">insert_chart</i>
+								<span class="translate">Notes</span></a>
+						</li>
+					</ul>
+				</nav>
+				<div transitionname="fade" animation="[object Object]" componentprops="[object Object]" class="tab-content">
+					<div class="pane-container">
+						<div class="window-container">
+							<div class="window-titlebar">
+								<div role="group" class="btn-group">
+									<h6 class="window-title">Notes</h6><button type="button" class="btn btn-window btn-sm"><i class="fa fa-angle-double-right"></i></button></div>
+							</div>
+							<div class="window-content-container">
+								<div paneid="notes-6-pane">
+									<div class="notes-container default-pane-minwidth full-height-reference">
+										<form name="notes" class="d-flex flex-column">
+											<div class="d-flex flex-row">
+												<div class="input-group"><input placeholder="Name" type="text" class="form-control" value=""><button type="submit" class="btn btn-success">Save</button></div>
+											</div>
+											<div class="d-flex flex-row mt-1 note-body">
+												<div class="input-group"><textarea class="form-control"></textarea></div>
+											</div>
+										</form>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row-fluid">
+			<div class="footer-container">
+				<div class="footer">
+					<div class="footer-alert-area">
+						<div class="row-fluid">
+							<div class="span12" style="min-height: 0px;">
+								<div class="bottom-alert">
+
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="footer-content">
+						<span style="float: left;">
+	                                <!--<em>Powered by </em> -->
+	                                <img src="/themes/default/amd-logo.svg" style="width: 100px;">
+	                            </span>
+						<span data-bind="text: $data.devicesAttachedText" class="devices-attached-label" style="line-height: 9px; font-size: 8px;">No patient devices</span> &nbsp;
+
+						<span class="translate">Number of Active Users:</span>
+						<span id="total-user-count-id" data-bind="text: $data.totalUserCount" style="line-height: 12px; font-size: 10px;">1</span>
+
+
+						<span style="float: right;">
+	                                <em data-bind="text: $data.agnesVersion">version unknown</em>
+	                            </span>
+
+						<a id="agnes-logout-button" href="#" style="margin-right: 10px;" class="pull-right btn btn-mini btn-danger translate">Logout</a>
+						<a id="agnes-clearsession-button" href="#" style="margin-right: 10px;" class="pull-right btn btn-mini btn-primary translate">Clear Session</a>
+						<a data-target="index.html" onclick="javascript:window.open(app.getDocPath($(this).attr('data-target')),'blank','width=800,height=300,status=yes,scrollbars=yes,resizable=yes')" class="pull-right agnes-doc-link translate" style="margin-right: 10px;">Documentation</a>
+
+					</div>
+					<!--div class="footer"></div-->
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<div id="license-agreement" class="modal hide fade" tabindex="-1" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h3 class="translate modal-title">AGNES License Agreement</h3>
+				</div>
+				<div class="modal-body d-flex">
+					<iframe src="/license.html" frameborder="0" style="flex: 1; min-height: 300px;"></iframe>
+				</div>
+				<div class="modal-footer">
+					<button id="license-cancel" class="btn pull-right translate">Cancel</button><button id="license-ok" class="pull-right btn translate">OK</button>
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="webpage-timeout" class="modal hide fade" tabindex="-1" role="dialog">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h3 class="modal-title translate">AGNES Inactivity Timeout</h3>
+					<a href="javascript://" class="close" data-dismiss="modal">×</a>
+				</div>
+				<div class="modal-body">
+					<span class="translate">You will be automatically logged out in</span>&nbsp;<span id="webpage-timeout-time"></span>&nbsp;<span class="translate">seconds due to inactivity.  Click 'Cancel' to prevent the logout and return to your AGNES session.</span>
+				</div>
+				<div class="modal-footer">
+					<button id="webpage-timeout-cancel" style="margin: 5px;" class="btn pull-right translate">Cancel</button><button id="webpage-timeout-logout" style="margin: 5px;" class="pull-right btn translate">Logout</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="awaiting-entrance-modal" class="modal hide fade" tabindex="-1" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h3 class="translate modal-title">AGNES patient consult in-progress</h3>
+				</div>
+				<div class="modal-body">
+					<div id="awaiting-entrance-text" class="alert alert-info">
+						<p style="margin: 10px;"><span class="translate">There is an AGNES patient consult currently in-progress.  Please wait while we notify the other participants of your arrival, and await their authorization.</span></p>
+					</div>
+					<div id="entrance-denied-text" class="alert alert-danger" style="display: none">
+						<p style="margin: 10px;"><span class="translate">Sorry, your request to join this AGNES patient consult has either timed out or been rejected.</span></p>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button id="awaiting-entrance-cancel" style="margin: 5px;" class="btn btn-danger pull-right translate">Logout</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- racoco 9/2014  For max user login feature. leverage existing video conf support -->
+	<div id="maxuser-incoming-template" style="display: none;">
+		<div class="maxuser-incoming-alert alert alert-success">
+
+			<!-- removed data-dismiss="alert" attribute/value from  both buttons. -->
+
+			<button id="maxuser-accept-call-button" class="btn btn-mini btn-success" style="margin-right: 5px;">
+	                <i class="fa fa-phone"></i>&nbsp;<span class="translate">Accept</span>
+	            </button>
+
+			<button id="maxuser-reject-call-button" class="btn btn-mini btn-warning" style="margin-right: 20px;">
+	                <i class="fa fa-remove"></i>&nbsp;<span class="translate">Reject</span>
+	            </button>
+
+			<em><span class="translate">Login request from</span>&nbsp;</em>
+			<span class="vc-calling-who translate">Someone</span>
+
+			<span>&nbsp; [</span>
+			<span class="translate">Number of currently logged-in users</span>:&nbsp;
+			<span class="num-max-users translate">unknown</span>
+			<span>]</span>
+
+			<a href="#" class="close" data-dismiss="alert">×</a>
+		</div>
+	</div>
+
+	<div id="ext-patient-container">
+		<style>
+			#ext-patient-info-dialog-container.hide-firstName .hide-firstName {
+				display: none;
+			}
+
+			#ext-patient-info-dialog-container.hide-lastName .hide-lastName {
+				display: none;
+			}
+
+			#ext-patient-info-dialog-container.hide-middleInitial .hide-middleInitial {
+				display: none;
+			}
+
+			#ext-patient-info-dialog-container.hide-birthDate .hide-birthDate {
+				display: none;
+			}
+
+			#ext-patient-info-dialog-container.hide-patientId .hide-patientId {
+				display: none;
+			}
+
+			#ext-patient-info-dialog-container.hide-description .hide-description {
+				display: none;
+			}
+
+			#ext-patient-info-dialog-container.hide-sex .hide-sex {
+				display: none;
+			}
+		</style>
+		<div id="ext-patient-info-dialog-container">
+			<div id="ext-patient-info-dialog" class="patient-info-dialog modal hide fade" role="dialog">
+				<div class="modal-dialog">
+					<div class="ext-patient-info-body modal-content">
+						<div class="modal-header">
+							<h5 id="ext-patient-title" class="modal-title translate">Patient Information</h5>
+							<a href="#" class="disable-spin close" data-dismiss="modal">×</a>
+						</div>
+						<div class="modal-body">
+							<div class="row-fluid">
+								<div id="ext-patient-info-dialog-alert" class="span12" style="min-height: 0px; display: none;">
+									<div class="alert">
+										<button type="button" class="close">×</button>
+										<div id="ext-patient-info-dialog-alert-text">Warning, somethings going on</div>
+									</div>
+								</div>
+							</div>
+							<div class="row-fluid">
+								<div class="span12">
+									<p class="translate">Warning: Changing patient information will clear all current AGNES session data, including clearing all vitals and removing all session documents.</p>
+								</div>
+							</div>
+							<div class="row-fluid">
+								<div class="span12">
+									<div class="data-table">
+										<div class="row-fluid data-table-enum" data-bind="foreach: $data.data.extPatient, hasAbbreviations: true"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="license-modal-footer modal-footer align-items-right">
+							<button id="ext-patient-info-dialog-ok" style="margin: 5px;" class="disable-spin pull-right btn">
+	                            <i id="ext-patient-info-dialog-ok-spin" class="fa fa-spinner icon-spin" style="display: none;"></i>
+	                            <span class="translate" id="ext-patient-info-dialog-ok-text">Change</span>
+	                        </button>
+							<button id="ext-patient-info-dialog-cancel" style="margin: 5px;" class="disable-spin btn pull-right translate">Cancel</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="ext-patient-select-dialog" class="patient-select-dialog modal modal-wide hide fade" tabindex="-1" role="dialog">
+				<div class="modal-dialog">
+					<div class="ext-patient-select-body modal-content" style="overflow: auto; max-height: 300px;">
+						<div class="modal-header">
+							<a href="#" class="close" data-dismiss="modal">×</a>
+							<h3 id="ext-patient-select-title" class="translate">Select Patient</h3>
+						</div>
+						<div class="modal-body">
+							<div class="row-fluid">
+								<div class="span12">
+									<table class="table table-bordered table-striped">
+										<thead>
+											<tr>
+												<td class="hide-firstName translate">First Name</td>
+												<td class="hide-lastName translate">Last Name</td>
+												<td class="hide-middleInitial translate">MI</td>
+												<td class="hide-birthDate translate">Birth date</td>
+												<td class="hide-sex translate">Sex</td>
+												<td class="hide-patientId translate">ID</td>
+												<td class="hide-description translate">Description</td>
+												<td class="translate">Select</td>
+											</tr>
+										</thead>
+										<tbody data-bind="foreach: $data.selectPatient"></tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="license-modal-footer modal-footer">
+						<button id="ext-patient-select-dialog-cancel" style="margin: 5px;" class="btn pull-right translate">Cancel</button>
+					</div>
+				</div>
+			</div>
+			<div id="ext-patient-confirm-dialog" class="patient-select-dialog modal hide fade" tabindex="-1" role="dialog">
+				<div class="modal-dialog">
+					<div class="ext-patient-confirm-body modal-content">
+						<div class="modal-header">
+							<a href="#" class="close" data-dismiss="modal">×</a>
+							<h3 id="ext-patient-confirm-title" class="translate">Patient Confirmation</h3>
+						</div>
+						<div class="modal-body">
+							<div class="row-fluid hide-firstName">
+								<div class="span3">
+									<span class="translate label label-info">First Name:</span>
+								</div>
+								<div class="span9">
+									<span data-bind="text: $data.confirmPatient().patient.firstName"></span>
+								</div>
+							</div>
+							<div class="row-fluid hide-lastName">
+								<div class="span3">
+									<span class="translate label label-info">Last Name:</span>
+								</div>
+								<div class="span9">
+									<span data-bind="text: $data.confirmPatient().patient.lastName"></span>
+								</div>
+							</div>
+							<div class="row-fluid hide-middleInitial">
+								<div class="span3">
+									<span class="translate label label-info">Middle Initial:</span>
+								</div>
+								<div class="span9">
+									<span data-bind="text: $data.confirmPatient().patient.middleInitial"></span>
+								</div>
+							</div>
+							<div class="row-fluid hide-birthDate">
+								<div class="span3">
+									<span class="translate label label-info">Birth Date:</span>
+								</div>
+								<div class="span9">
+									<span data-bind="text: $data.confirmPatient().birthDate"></span>
+								</div>
+							</div>
+							<div class="row-fluid hide-sex">
+								<div class="span3">
+									<span class="translate label label-info">Sex:</span>
+								</div>
+								<div class="span9">
+									<span data-bind="text: $data.confirmPatient().patient.sex"></span>
+								</div>
+							</div>
+							<div class="row-fluid hide-patientId">
+								<div class="span3">
+									<span class="translate label label-info">Patient ID:</span>
+								</div>
+								<div class="span9">
+									<span data-bind="text: $data.confirmPatient().patient.patientId"></span>
+								</div>
+							</div>
+							<div class="row-fluid hide-description">
+								<div class="span3">
+									<span class="translate label label-info">Description:</span>
+								</div>
+								<div class="span9">
+									<span data-bind="text: $data.confirmPatient().description"></span>
+								</div>
+							</div>
+
+						</div>
+					</div>
+					<div class="license-modal-footer modal-footer">
+						<button id="ext-patient-confirm-dialog-cancel" style="margin: 5px;" class="btn pull-right translate">Cancel</button>
+						<button id="ext-patient-confirm-dialog-ok" style="margin: 5px;" class="disable-spin pull-right btn">
+	                        <span class="translate" id="ext-patient-confirm-dialog-ok-text">Ok</span>
+	                    </button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- JS Script Start -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/materialize.js"></script>
+	<script src="js/main.js"></script>
+	<!-- JS Script End -->
+</body>
+
 </html>

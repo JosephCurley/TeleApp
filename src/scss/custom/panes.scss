@@ -1,0 +1,15 @@
+.window-titlebar {
+	background-color: $main-color;
+	color: white;
+	text-align: center;
+	height: 40px;
+}
+.window-title {
+	display: block;
+	height: 40px;
+	line-height: 40px;
+}
+
+.window-titlebar .btn {
+	display: none;
+}
