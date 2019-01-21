@@ -1,3 +1,24 @@
+.pill-pane__wapper {
+	display: flex;
+	flex-basis: 100%;
+	flex-wrap: wrap;
+}
+
+.pill-pane {
+	padding: 20px;
+	flex-grow: 1;
+	flex-shrink: 1;
+	flex-basis: 100%;
+
+	@media screen and (min-width: 1200px) {
+		flex-basis: 50%;
+		padding: 20px 20px 20px 0;
+		&:first-of-type {
+			padding-left: 20px
+		}
+	}
+}
+
 .window-titlebar {
 	background-color: $main-color;
 	color: white;
@@ -20,7 +41,6 @@
 
 /* Window */
 .window-container {
-  margin: 20px;
 	@extend .z-depth-2
 }
 
@@ -32,4 +52,10 @@
 .video-area {
 	background: #666;
 	min-height: 50vh;
+}
+
+/* vitals */
+
+.vitals-container {
+	margin-top: 20px;
 }
