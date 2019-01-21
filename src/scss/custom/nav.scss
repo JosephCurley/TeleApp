@@ -43,14 +43,3 @@ nav i.nav-icon {
   line-height: 56px;
   vertical-align: top;
 }
-
-/* Window */
-.window-container {
-  margin: 20px;
-	@extend .z-depth-2
-}
-
-.tab-content {
-	flex-grow: 1;
-	flex-basis: 100%;
-}

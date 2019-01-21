@@ -1,4 +1,47 @@
+.vc-top-row {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 10px 10px 0;
+}
+.vc-button--preview {
+	margin-left: auto;
+}
+
 .vc-switch {
 	display: inline-block;
-	padding: 10px;
+	padding-left: 10px;
+	margin-bottom: 10px;
+}
+
+.vc-button {
+	margin-bottom: 10px;
+}
+
+.camera-controls {
+	position: absolute;
+	bottom: 10px;
+	left: 10px;
+	height: 120px;
+	width: 130px;
+	text-align: center;
+
+	&.camera-controls--zoom {
+		left: auto;
+		right: 10px;
+		display: flex;
+		align-items: center;
+	  justify-content: center;
+		flex-direction: column;
+		width: 36px;
+	}
+}
+
+.cc-buttom {
+	margin: 5px;
+}
+
+.cc-button-up,
+.cc-button-down {
+	display: block;
+	margin: 5px auto;
 }

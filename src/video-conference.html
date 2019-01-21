@@ -20,35 +20,56 @@
 			<div class="window-titlebar unselectable drag-handle" unselectable="on">
 				<span class="window-title">Video Conference</span>
 			</div>
-			<div class="button-group">
-				<a class="waves-effect waves-light btn">Call</a>
-				<a class="waves-effect waves-light btn"><i class="material-icons left">cloud</i>Hang Up</a>
-				<a class="waves-effect waves-light btn"><i class="material-icons right">cloud</i>Hold</a>
+			<div class="vc-top-row">
+				<a class="vc-button waves-effect waves-light btn-small btn">Call</a>
+				<a class="vc-button waves-effect waves-light btn-small btn">Hang Up</a>
+				<a class="vc-button waves-effect waves-light btn-small btn">Hold</a>
+				<a class="vc-button vc-button--preview waves-effect waves-light btn-small btn">Preview</a>
 			</div>
-
 			<div class="button-group">
 				<div class="switch vc-switch">
-		    <label>
+					<label>
 		      Microphone:
 		      <input type="checkbox">
 		      <span class="lever"></span>
 		    </label>
-		  </div>
-			<div class="switch vc-switch">
-			<label>
-				Audio:
-				<input type="checkbox">
-				<span class="lever"></span>
-			</label>
+				</div>
+				<div class="switch vc-switch">
+					<label>
+					Audio:
+					<input type="checkbox">
+					<span class="lever"></span>
+				</label>
+				</div>
+
+				<div class="switch vc-switch">
+					<label>
+					Video:
+					<input type="checkbox">
+					<span class="lever"></span>
+				</label>
+				</div>
+				<div class="switch vc-switch">
+					<label>
+					Audio Only:
+					<input type="checkbox">
+					<span class="lever"></span>
+				</label>
+				</div>
+			</div>
+			<div class="video-area">
+			</div>
+			<div class="camera-controls" draggable="true">
+				<a class="cc-button cc-button-up btn-floating btn-small waves-effect waves-light red"><i class="material-icons">expand_less</i></a>
+				<a class="cc-button cc-button-left btn-floating btn-small waves-effect waves-light red"><i class="material-icons">chevron_left</i></a>
+				<a class="cc-button cc-button-stop btn-floating btn-small waves-effect waves-light red"><i class="material-icons">stop</i></a>
+				<a class="cc-button cc-button-right btn-floating btn-small waves-effect waves-light red"><i class="material-icons">chevron_right</i></a>
+				<a class="cc-button cc-button-down btn-floating btn-small waves-effect waves-light red"><i class="material-icons">expand_more</i></a>
 			</div>
 
-			<div class="switch vc-switch">
-			<label>
-				Video:
-				<input type="checkbox">
-				<span class="lever"></span>
-			</label>
-			</div>
+			<div class="camera-controls camera-controls--zoom" draggable="true">
+				<a class="cc-button cc-button-up btn-floating btn-small waves-effect waves-light red"><i class="material-icons">add</i></a>
+				<a class="cc-button cc-button-down btn-floating btn-small waves-effect waves-light red"><i class="material-icons">remove</i></a>
 			</div>
 		</div>
 	</div>
