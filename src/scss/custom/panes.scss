@@ -5,7 +5,7 @@
 }
 
 .pill-pane {
-	padding: 20px;
+	padding: 0 20px 20px;
 	flex-grow: 1;
 	flex-shrink: 1;
 	flex-basis: 100%;
@@ -17,6 +17,10 @@
 			padding-left: 20px
 		}
 	}
+}
+
+.window-content-wrapper {
+	padding: 10px;
 }
 
 .window-titlebar {
@@ -96,4 +100,18 @@
 
 .stetoscope-image {
 	margin: 0 auto;
+	max-width: 100%;
+}
+
+/* ecg */
+.ecg-image {
+	max-width: 100%;
+}
+
+.ecg-container {
+	padding: 10px;
+}
+
+.ecg-button-wrapper {
+	margin: 10px 10px 0;
 }

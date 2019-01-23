@@ -23,36 +23,36 @@
 				</div>
 			</div>
 			<ul class="nav">
-				<li class="nav-item"><a class="nav-link">
+				<li class="nav-item"><a class="nav-link" href="./documents.html">
 					<i class="left large material-icons nav-icon">folder_shared</i>
 					<span class="translate">Documents</span></a>
 				</li>
-				<li class="nav-item"><a class="nav-link">
+				<li class="nav-item"><a class="nav-link" href="./video-conference.html">
 					<i class="left large material-icons nav-icon">video_call</i>
 					<span class="translate">Video Conference</span></a>
 				</li>
-				<li class="nav-item"><a class="nav-link">
+				<li class="nav-item"><a class="nav-link" href="./vital.html">
 					<i class="left large material-icons nav-icon">show_chart</i>
 					<span class="translate">Vitals</span></a>
 				</li>
-				<li class="nav-item"><a class="nav-link">
+				<li class="nav-item"><a class="nav-link" href="./stetoscope.html">
 					<i class="left large material-icons nav-icon">insert_chart</i>
 					<span class="translate">Stethoscope</span></a>
 				</li>
-				<li class="nav-item"><a class="nav-link">
+				<li class="nav-item"><a class="nav-link" href="./medical-video.html">
 					<i class="left large material-icons nav-icon">insert_chart</i>
 					<span class="translate">Medical Video</span></a>
 				</li>
-				<li class="nav-item"><a class="nav-link">
+				<li class="nav-item"><a class="nav-link" href="./ecg.html">
 							<i class="left large material-icons nav-icon">insert_chart</i>
 							<span class="translate">ECG</span></a>
 				</li>
-				<li class="nav-item"><a class="nav-link">
+				<li class="nav-item"><a class="nav-link" href="./notes.html">
 							<i class="left large material-icons nav-icon">notes</i>
 							<span class="translate">Notes</span></a>
 				</li>
 
-				<li class="nav-item"><a class="nav-link">
+				<li class="nav-item"><a class="nav-link" href="./chat.html">
 							<i class="left large material-icons nav-icon">chat_bubble_outline</i>
 							<span class="translate">Chat</span></a>
 				</li>
@@ -60,12 +60,27 @@
 		</nav>
 		<div class="application-wrapper">
 			<div class="top-bar">
-				<div class="patient-information">
-					<span class="patient-information__section"><b>Name:</b> Robert Smith</span>
-					<span class="patient-information__section"><b>Weight:</b>210 lb</span>
-					<span class="patient-information__section"><b>Age:</b>72</span>
-					<span class="patient-information__section"><b>Sex:</b> Male</span>
-					<span class="patient-information__section"><b>Dolar:</b> Sit Amey</span>
+				<div class="patient-information row">
+					<div class="input-field col s4 m3 l2">
+						<input id="p-name" type="text" class="validate">
+						<label class="" for="p-name">Patient Name</label>
+					</div>
+					<div class="input-field col s4 m1 l2">
+						<input id="p-age" type="text" class="validate">
+						<label class="" for="p-age">Age</label>
+					</div>
+					<div class="input-field col s4 m2 l2">
+						<input id="p-height" type="text" class="validate">
+						<label class="" for="p-height">Height</label>
+					</div>
+					<div class="input-field col s4 m2 l2">
+						<input id="p-weight" type="text" class="validate">
+						<label class="" for="p-weight">Weight</label>
+					</div>
+					<div class="input-field col s4 m4 l2">
+						<input id="p-blood_pressure" type="text" class="validate">
+						<label class="" for="p-blood_pressure">Blood Pressure</label>
+					</div>
 				</div>
 			</div>
 			<div class="pill-pane__wapper">
@@ -183,7 +198,6 @@
 							    <li class="divider" tabindex="-1"></li>
 							    <li><a href="#!">Dr. three</a></li>
 							  </ul>
-								<!-- <a class="vc-button waves-effect waves-light btn-small btn">Call</a> -->
 								<a class="vc-button waves-effect waves-light btn-small btn">Hang Up</a>
 								<a class="vc-button waves-effect waves-light btn-small btn">Hold</a>
 								<a class="vc-button vc-button--preview waves-effect waves-light btn-small btn">Preview</a>

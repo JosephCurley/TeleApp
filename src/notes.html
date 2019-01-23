@@ -85,72 +85,66 @@
 							</div>
 						</div>
 
-									<div class="pill-pane__wapper">
-										<div class="pill-pane application-pill-pane app-pill-pane-tab active">
-											<div class="pane-container">
-												<div class="window-container">
-													<div class="window-titlebar unselectable drag-handle" unselectable="on">
-														<span class="window-title">Vital</span>
-													</div>
-													<div class="vitals-container">
-														<div class="row">
-															<div class="input-field col s4">
-																<input placeholder="No data" id="oxygen" type="text" class="validate">
-																<label class="active" for="oxygen">Sp02 (%)</label>
-															</div>
-															<div class="input-field col s4">
-																<input placeholder="No data" id="pulse" type="text" class="validate">
-																<label class="active" for="pulse">Pulse (BPM)</label>
-															</div>
-															<div class="input-field col s4">
-																<input placeholder="No data" id="blood_pressure" type="text" class="validate">
-																<label class="active" for="blood_pressure">Blood Pressure (mmHG)</label>
-															</div>
-															<div class="input-field col s4">
-																<input placeholder="No data" id="temperature" type="text" class="validate">
-																<label class="active" for="temperature">Temperature (&deg;)</label>
-															</div>
-															<div class="input-field col s4">
-																<input placeholder="No data" id="height" type="text" class="validate">
-																<label class="active" for="height">Height (inches)</label>
-															</div>
-															<div class="input-field col s2">
-																<input placeholder="No data" id="first_name" type="text" class="validate">
-																<label class="active" for="first_name">Weight (LB)</label>
-															</div>
-														</div>
-													</div>
-												</div>
-											</div>
+						<div class="pill-pane__wapper">
+							<div class="pill-pane application-pill-pane app-pill-pane-tab active">
+								<div class="pane-container">
+									<div class="window-container">
+										<div class="window-titlebar unselectable drag-handle" unselectable="on">
+											<span class="window-title">Notes</span>
 										</div>
-										<!-- END -->
-										<div class="pill-pane application-pill-pane app-pill-pane-tab active">
-											<div class="pane-container">
-												<div class="window-container">
-													<div class="window-titlebar unselectable drag-handle" unselectable="on">
-														<span class="window-title">Medical Video</span>
-													</div>
-													<div class="vc-top-row">
-														<!-- Dropdown Trigger -->
-														<a class='dropdown-trigger btn-small btn' href='#' data-target='call-dropdown'>Choose Video <i class="material-icons right">arrow_drop_down</i></a>
-														<!-- Dropdown Structure -->
-														<ul id='call-dropdown' class='dropdown-content'>
-															<li><a href="#!">09.15.20</a></li>
-															<li><a href="#!">09.16.20</a></li>
-															<li class="divider" tabindex="-1"></li>
-															<li><a href="#!">09.17.20</a></li>
-														</ul>
-
-														<a class="vc-button snapshot-button waves-effect waves-light btn-small btn red lighten-1">Take Snapshot</a>
-													</div>
-
-													<div class="video-area">
-
-													</div>
+										<div class="window-content-wrapper">
+											<div class="row">
+												<div class="input-field col s8 m6">
+													<input id="n-name" type="text" class="validate">
+													<label class="" for="n-name">Name</label>
 												</div>
 											</div>
+											<div class="row">
+												<div class="input-field col s12">
+													<textarea id="textarea1" class="materialize-textarea"></textarea>
+													<label for="textarea1">Note Content</label>
+												</div>
+											</div>
+											<button class="right input-field btn-small waves-effect waves-light s4 m2" type="submit" name="action">Save
+												 <i class="material-icons right">send</i>
+											 </button>
+
 										</div>
 									</div>
+								</div>
+							</div>
+							<!-- END -->
+							<div class="pill-pane application-pill-pane app-pill-pane-tab active">
+								<div class="pane-container">
+									<div class="window-container">
+										<div class="window-titlebar unselectable drag-handle" unselectable="on">
+											<span class="window-title">Chat</span>
+										</div>
+										<div class="window-content-wrapper">
+											<div class="row">
+												<div class="col s4 input-field">
+													<a class='dropdown-trigger btn-small btn' href='#' data-target='call-dropdown'><i class="material-icons right">arrow_drop_down</i>all</a>
+													<!-- Dropdown Structure -->
+													<ul id='call-dropdown' class='dropdown-content'>
+														<li><a href="#!">Channel 1</a></li>
+														<li><a href="#!"> Channel 2</a></li>
+														<li class="divider" tabindex="-1"></li>
+														<li><a href="#!">Channel 3</a></li>
+													</ul>
+											  </div>
+												<div class="col s8">
+													<div class="input-field">
+														<input id="n-name" type="text" class="validate">
+														<label class="" for="n-name">Name</label>
+													</div>
+												</div>
+											</div>
+
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 				<!-- JS Script Start -->

@@ -7425,6 +7425,9 @@ input[type=range]::-ms-thumb {
   display: flex;
   flex-direction: row; }
 
+.application-wrapper {
+  width: 100%; }
+
 .navbar {
   display: flex;
   justify-content: space-between; }
@@ -7472,7 +7475,7 @@ nav i.nav-icon {
   flex-wrap: wrap; }
 
 .pill-pane {
-  padding: 20px;
+  padding: 0 20px 20px;
   flex-grow: 1;
   flex-shrink: 1;
   flex-basis: 100%; }
@@ -7482,6 +7485,9 @@ nav i.nav-icon {
       padding: 20px 20px 20px 0; }
       .pill-pane:first-of-type {
         padding-left: 20px; } }
+
+.window-content-wrapper {
+  padding: 10px; }
 
 .window-titlebar {
   background-color: #2781a7;
@@ -7542,7 +7548,18 @@ nav i.nav-icon {
   flex-wrap: wrap; }
 
 .stetoscope-image {
-  margin: 0 auto; }
+  margin: 0 auto;
+  max-width: 100%; }
+
+/* ecg */
+.ecg-image {
+  max-width: 100%; }
+
+.ecg-container {
+  padding: 10px; }
+
+.ecg-button-wrapper {
+  margin: 10px 10px 0; }
 
 .vc-top-row {
   display: flex;
@@ -7593,4 +7610,4 @@ nav i.nav-icon {
 .top-bar {
   flex-basis: 100%;
   margin: 0 20px;
-  padding: 10px; }
+  padding: 10px 10px 0; }
