@@ -1,163 +1,146 @@
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>App</title>
-	<!--Import Font-->
-	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-	<!-- CSS START -->
-	<link rel="stylesheet" href="css/font-awesome.min.css">
-	<link rel="stylesheet" href="css/style.css">
-	<!-- CSS END -->
-</head>
+			<!DOCTYPE html>
+			<html lang="en">
 
-<body class=>
-	<div class="application-body">
-		<div class="application-wrapper">
-			<nav class="device-sidebar navbar">
-				<ul class="nav">
-					<li class="nav-item"><a class="nav-link">
-							<i class="large material-icons nav-icon">folder_shared</i>
-							<span class="translate">Documents</span></a>
-					</li>
-					<li class="nav-item"><a class="nav-link">
-							<i class="large material-icons nav-icon">video_call</i>
-							<span class="translate">Video Conference</span></a>
-					</li>
-					<li class="nav-item"><a class="nav-link">
-							<i class="large material-icons nav-icon">show_chart</i>
-							<span class="translate">Vitals</span></a>
-					</li>
-					<li class="nav-item"><a class="nav-link">
-							<i class="large material-icons nav-icon">insert_chart</i>
-							<span class="translate">Stethoscope</span></a>
-					</li>
-					<li class="nav-item"><a class="nav-link">
-							<i class="large material-icons nav-icon">insert_chart</i>
-							<span class="translate">Medical Video</span></a>
-					</li>
-					<li class="nav-item"><a class="nav-link">
-							<i class="large material-icons nav-icon">insert_chart</i>
-							<span class="translate">ECG</span></a>
-					</li>
-					<li class="nav-item"><a class="nav-link">
-							<i class="large material-icons nav-icon">notes</i>
-							<span class="translate">Notes</span></a>
-					</li>
+			<head>
+				<meta charset="UTF-8">
+				<meta name="viewport" content="width=device-width, initial-scale=1.0">
+				<title>App</title>
+				<!--Import Font-->
+				<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+				<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+				<!-- CSS START -->
+				<link rel="stylesheet" href="css/font-awesome.min.css">
+				<link rel="stylesheet" href="css/style.css">
+				<!-- CSS END -->
+			</head>
 
-					<li class="nav-item"><a class="nav-link">
-							<i class="large material-icons nav-icon">chat_bubble_outline</i>
-							<span class="translate">Chat</span></a>
-					</li>
-				</ul>
-			</nav>
-			<div class="pill-pane__wapper">
-				<div class="pill-pane application-pill-pane app-pill-pane-tab active">
-					<div class="pane-container">
-						<div class="window-container">
-							<div class="window-titlebar unselectable drag-handle" unselectable="on">
-								<span class="window-title">Vital</span>
-							</div>
-							<div class="vitals-container">
-								<div class="row">
-									<div class="input-field col s4">
-										<input placeholder="No data" id="oxygen" type="text" class="validate">
-										<label class="active" for="oxygen">Sp02 (%)</label>
-									</div>
-									<div class="input-field col s4">
-										<input placeholder="No data" id="pulse" type="text" class="validate">
-										<label class="active" for="pulse">Pulse (BPM)</label>
-									</div>
-									<div class="input-field col s4">
-										<input placeholder="No data" id="blood_pressure" type="text" class="validate">
-										<label class="active" for="blood_pressure">Blood Pressure (mmHG)</label>
-									</div>
-									<div class="input-field col s4">
-										<input placeholder="No data" id="temperature" type="text" class="validate">
-										<label class="active" for="temperature">Temperature (&deg;)</label>
-									</div>
-									<div class="input-field col s4">
-										<input placeholder="No data" id="height" type="text" class="validate">
-										<label class="active" for="height">Height (inches)</label>
-									</div>
-									<div class="input-field col s2">
-										<input placeholder="No data" id="first_name" type="text" class="validate">
-										<label class="active" for="first_name">Weight (LB)</label>
-									</div>
-								</div>
+			<body>
+				<div class="application-body">
+					<nav class="device-sidebar navbar">
+						<div class="logo-wrapper">
+							<div class="navbar-brand agnes-logo">
+								<img src="./themes/default/agnes-logo.svg" style="max-width: 180px;">
 							</div>
 						</div>
-					</div>
-				</div>
-				<!-- END -->
-				<div class="pill-pane application-pill-pane app-pill-pane-tab active">
-					<div class="pane-container">
-						<div class="window-container">
-							<div class="window-titlebar unselectable drag-handle" unselectable="on">
-								<span class="window-title">Video Conference</span>
-							</div>
-							<div class="vc-top-row">
-								<a class="vc-button waves-effect waves-light btn-small btn">Call</a>
-								<a class="vc-button waves-effect waves-light btn-small btn">Hang Up</a>
-								<a class="vc-button waves-effect waves-light btn-small btn">Hold</a>
-								<a class="vc-button vc-button--preview waves-effect waves-light btn-small btn">Preview</a>
-							</div>
-							<div class="button-group">
-								<div class="switch vc-switch">
-									<label>
-										Microphone:
-										<input type="checkbox">
-										<span class="lever"></span>
-									</label>
-								</div>
-								<div class="switch vc-switch">
-									<label>
-										Audio:
-										<input type="checkbox">
-										<span class="lever"></span>
-									</label>
-								</div>
+						<ul class="nav">
+							<li class="nav-item"><a class="nav-link">
+								<i class="left large material-icons nav-icon">folder_shared</i>
+								<span class="translate">Documents</span></a>
+							</li>
+							<li class="nav-item"><a class="nav-link">
+								<i class="left large material-icons nav-icon">video_call</i>
+								<span class="translate">Video Conference</span></a>
+							</li>
+							<li class="nav-item"><a class="nav-link">
+								<i class="left large material-icons nav-icon">show_chart</i>
+								<span class="translate">Vitals</span></a>
+							</li>
+							<li class="nav-item"><a class="nav-link">
+								<i class="left large material-icons nav-icon">insert_chart</i>
+								<span class="translate">Stethoscope</span></a>
+							</li>
+							<li class="nav-item"><a class="nav-link">
+								<i class="left large material-icons nav-icon">insert_chart</i>
+								<span class="translate">Medical Video</span></a>
+							</li>
+							<li class="nav-item"><a class="nav-link">
+										<i class="left large material-icons nav-icon">insert_chart</i>
+										<span class="translate">ECG</span></a>
+							</li>
+							<li class="nav-item"><a class="nav-link">
+										<i class="left large material-icons nav-icon">notes</i>
+										<span class="translate">Notes</span></a>
+							</li>
 
-								<div class="switch vc-switch">
-									<label>
-										Video:
-										<input type="checkbox">
-										<span class="lever"></span>
-									</label>
-								</div>
-								<div class="switch vc-switch">
-									<label>
-										Audio Only:
-										<input type="checkbox">
-										<span class="lever"></span>
-									</label>
-								</div>
-							</div>
-							<div class="video-area">
-							</div>
-							<div class="camera-controls" draggable="true">
-								<a class="cc-button cc-button-up btn-floating btn-small waves-effect waves-light red"><i class="material-icons">expand_less</i></a>
-								<a class="cc-button cc-button-left btn-floating btn-small waves-effect waves-light red"><i class="material-icons">chevron_left</i></a>
-								<a class="cc-button cc-button-stop btn-floating btn-small waves-effect waves-light red"><i class="material-icons">stop</i></a>
-								<a class="cc-button cc-button-right btn-floating btn-small waves-effect waves-light red"><i class="material-icons">chevron_right</i></a>
-								<a class="cc-button cc-button-down btn-floating btn-small waves-effect waves-light red"><i class="material-icons">expand_more</i></a>
-							</div>
-							<div class="camera-controls camera-controls--zoom" draggable="true">
-								<a class="cc-button cc-button-up btn-floating btn-small waves-effect waves-light red"><i class="material-icons">add</i></a>
-								<a class="cc-button cc-button-down btn-floating btn-small waves-effect waves-light red"><i class="material-icons">remove</i></a>
+							<li class="nav-item"><a class="nav-link">
+										<i class="left large material-icons nav-icon">chat_bubble_outline</i>
+										<span class="translate">Chat</span></a>
+							</li>
+						</ul>
+					</nav>
+					<div class="application-wrapper">
+						<div class="top-bar">
+							<div class="patient-information">
+								<span class="patient-information__section"><b>Name:</b> Robert Smith</span>
+								<span class="patient-information__section"><b>Weight:</b>210 lb</span>
+								<span class="patient-information__section"><b>Age:</b>72</span>
+								<span class="patient-information__section"><b>Sex:</b> Male</span>
+								<span class="patient-information__section"><b>Dolar:</b> Sit Amey</span>
 							</div>
 						</div>
+
+									<div class="pill-pane__wapper">
+										<div class="pill-pane application-pill-pane app-pill-pane-tab active">
+											<div class="pane-container">
+												<div class="window-container">
+													<div class="window-titlebar unselectable drag-handle" unselectable="on">
+														<span class="window-title">Vital</span>
+													</div>
+													<div class="vitals-container">
+														<div class="row">
+															<div class="input-field col s4">
+																<input placeholder="No data" id="oxygen" type="text" class="validate">
+																<label class="active" for="oxygen">Sp02 (%)</label>
+															</div>
+															<div class="input-field col s4">
+																<input placeholder="No data" id="pulse" type="text" class="validate">
+																<label class="active" for="pulse">Pulse (BPM)</label>
+															</div>
+															<div class="input-field col s4">
+																<input placeholder="No data" id="blood_pressure" type="text" class="validate">
+																<label class="active" for="blood_pressure">Blood Pressure (mmHG)</label>
+															</div>
+															<div class="input-field col s4">
+																<input placeholder="No data" id="temperature" type="text" class="validate">
+																<label class="active" for="temperature">Temperature (&deg;)</label>
+															</div>
+															<div class="input-field col s4">
+																<input placeholder="No data" id="height" type="text" class="validate">
+																<label class="active" for="height">Height (inches)</label>
+															</div>
+															<div class="input-field col s2">
+																<input placeholder="No data" id="first_name" type="text" class="validate">
+																<label class="active" for="first_name">Weight (LB)</label>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<!-- END -->
+										<div class="pill-pane application-pill-pane app-pill-pane-tab active">
+											<div class="pane-container">
+												<div class="window-container">
+													<div class="window-titlebar unselectable drag-handle" unselectable="on">
+														<span class="window-title">Medical Video</span>
+													</div>
+													<div class="vc-top-row">
+														<!-- Dropdown Trigger -->
+														<a class='dropdown-trigger btn-small btn' href='#' data-target='call-dropdown'>Choose Video <i class="material-icons right">arrow_drop_down</i></a>
+														<!-- Dropdown Structure -->
+														<ul id='call-dropdown' class='dropdown-content'>
+															<li><a href="#!">09.15.20</a></li>
+															<li><a href="#!">09.16.20</a></li>
+															<li class="divider" tabindex="-1"></li>
+															<li><a href="#!">09.17.20</a></li>
+														</ul>
+
+														<a class="vc-button snapshot-button waves-effect waves-light btn-small btn red lighten-1">Take Snapshot</a>
+													</div>
+
+													<div class="video-area">
+
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
 					</div>
 				</div>
-			</div>
-		</div>
-	</div>
-	<!-- JS Script Start -->
-	<script src="js/jquery.min.js"></script>
-	<script src="js/materialize.js"></script>
-	<script src="js/main.js"></script>
-	<!-- JS Script End -->
-</body>
+				<!-- JS Script Start -->
+				<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+				<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+				<script src="js/main.js"></script>
+				<!-- JS Script End -->
+			</body>

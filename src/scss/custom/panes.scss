@@ -41,7 +41,8 @@
 
 /* Window */
 .window-container {
-	@extend .z-depth-2
+	@extend .z-depth-2;
+	min-height: 600px;
 }
 
 .tab-content {
@@ -51,11 +52,48 @@
 
 .video-area {
 	background: #666;
-	min-height: 50vh;
+	min-height: 460px;
+	margin: 0 10px;
+	position: relative;
+}
+
+.image-area {
+	@extend .grey;
+	@extend .lighten-3;
+	min-height: 460px;
+	margin: 0 10px;
+	position: relative;
+	text-align: center;
 }
 
 /* vitals */
 
 .vitals-container {
 	margin-top: 20px;
+}
+
+/* Documents */
+.document-card {
+	text-align: center;
+
+	.card-content {
+		padding: 15px;
+	}
+}
+
+.document-card-image {
+	max-height: 150px;
+	width: auto;
+	max-width: 100%;
+	object-fit: cover;
+}
+
+.window-body {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+}
+
+.stetoscope-image {
+	margin: 0 auto;
 }

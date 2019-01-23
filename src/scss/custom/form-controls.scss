@@ -3,6 +3,12 @@
 	flex-wrap: wrap;
 	margin: 10px 10px 0;
 }
+
+.btn {
+	@extend .lighten-1;
+	@extend .green;
+}
+.snapshot-button,
 .vc-button--preview {
 	margin-left: auto;
 }

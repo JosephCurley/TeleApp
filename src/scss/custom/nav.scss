@@ -1,11 +1,17 @@
+.logo-wrapper {
+	background: white;
+}
 
 .navbar-brand {
 	display: inline-block;
 }
 
-.application-wrapper {
+.application-body {
 	display: flex;
 	flex-direction: row;
+}
+
+.application-wrapper {
 }
 
 .navbar {
@@ -15,17 +21,26 @@
 .site-info {
 	display: inline-block;
 }
+
+/* nav */
 /* Side bar */
 .device-sidebar {
 	height: 100%;
+	display: flex;
+	flex-direction: column;
 	flex-basis: 200px;
-	display: inline-block;
 	flex-shrink: 0;
+	background-color: $main-color;
+	height: 100vh;
+	position: sticky;
+	top: 0;
+	overflow: scroll;
 }
 
-/* Nav */
-nav {
-	background-color: $main-color;
+.nav {
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
 }
 
 nav i.nav-icon {
@@ -34,6 +49,12 @@ nav i.nav-icon {
 
 .nav-item {
 	width: 100%;
+
+	&:last-child {
+		margin-top: auto;
+		@extend .green;
+		@extend .lighten-1;
+	}
 }
 
 .nav-link {

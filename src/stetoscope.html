@@ -113,11 +113,11 @@
 											<div class="pane-container">
 												<div class="window-container">
 													<div class="window-titlebar unselectable drag-handle" unselectable="on">
-														<span class="window-title">Medical Video</span>
+														<span class="window-title">Stetoscope</span>
 													</div>
 													<div class="vc-top-row">
 														<!-- Dropdown Trigger -->
-														<a class='dropdown-trigger btn-small btn' href='#' data-target='call-dropdown'>Choose Video <i class="material-icons right">arrow_drop_down</i></a>
+														<a class='dropdown-trigger btn-small btn' href='#' data-target='call-dropdown'>No Audio <i class="material-icons right">arrow_drop_down</i></a>
 														<!-- Dropdown Structure -->
 														<ul id='call-dropdown' class='dropdown-content'>
 															<li><a href="#!">09.15.20</a></li>
@@ -125,12 +125,18 @@
 															<li class="divider" tabindex="-1"></li>
 															<li><a href="#!">09.17.20</a></li>
 														</ul>
-
-														<a class="vc-button snapshot-button waves-effect waves-light btn-small btn red lighten-1">Take Snapshot</a>
+														<div class="switch vc-switch">
+															<label>
+																	Mute:
+																	<input type="checkbox">
+																	<span class="lever"></span>
+																</label>
+														</div>
+														<a class="vc-button snapshot-button waves-effect waves-light btn-small btn"><i class="material-icons left">fiber_manual_record</i> Record</a>
 													</div>
 
-													<div class="video-area">
-
+													<div class="image-area">
+															<img class="stetoscope-image" src="./assets/stethoscope-image.png" alt="">
 													</div>
 												</div>
 											</div>
