@@ -1,22 +1,32 @@
-.pill-pane__wapper {
+.pill-pane__wrapper {
+	flex-direction: column;
 	display: flex;
 	flex-basis: 100%;
 	flex-wrap: wrap;
+	max-height: 100vh;
+	@media screen and (min-width: 1200px) {
+		flex-direction: row;
+	}
 }
 
 .pill-pane {
+	display: flex;
 	padding: 0 20px 20px;
 	flex-grow: 1;
 	flex-shrink: 1;
-	flex-basis: 100%;
+	flex-basis: 50%;
 
 	@media screen and (min-width: 1200px) {
-		flex-basis: 50%;
-		padding: 20px 20px 20px 0;
+		padding: 0 20px 20px 0;
 		&:first-of-type {
 			padding-left: 20px
 		}
 	}
+}
+
+.pane-container {
+	flex: 1 1 auto;
+	display: flex;
 }
 
 .window-content-wrapper {
@@ -41,12 +51,13 @@
 
 .window-container {
 	position: relative;
+	flex-basis: 100%;
 }
 
 /* Window */
 .window-container {
 	@extend .z-depth-2;
-	min-height: 600px;
+	overflow: auto;
 }
 
 .tab-content {
@@ -85,8 +96,15 @@
 	}
 }
 
+.card-image__wrapper {
+	position: relative;
+	height: 0;
+	padding-bottom: 100%;
+	overflow: hidden;
+}
+
 .document-card-image {
-	max-height: 150px;
+	position: absolute;
 	width: auto;
 	max-width: 100%;
 	object-fit: cover;
@@ -114,4 +132,11 @@
 
 .ecg-button-wrapper {
 	margin: 10px 10px 0;
+}
+
+.card-title--document {
+	max-width: 100%;
+	display: block;
+	white-space: nowrap;
+	overflow: hidden;
 }

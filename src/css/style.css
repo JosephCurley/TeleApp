@@ -7416,7 +7416,8 @@ input[type=range]::-ms-thumb {
   flex-direction: column; }
 
 .logo-wrapper {
-  background: white; }
+  background: white;
+  max-height: 70px; }
 
 .navbar-brand {
   display: inline-block; }
@@ -7426,7 +7427,10 @@ input[type=range]::-ms-thumb {
   flex-direction: row; }
 
 .application-wrapper {
-  width: 100%; }
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; }
 
 .navbar {
   display: flex;
@@ -7454,8 +7458,12 @@ input[type=range]::-ms-thumb {
   flex-direction: column;
   flex-grow: 1; }
 
-nav i.nav-icon {
-  display: inline-block; }
+nav .nav-icon {
+  align-self: center;
+  display: inline-block;
+  height: 24px;
+  margin-right: 15px;
+  width: 24px; }
 
 .nav-item {
   width: 100%; }
@@ -7469,22 +7477,31 @@ nav i.nav-icon {
   line-height: 56px;
   vertical-align: top; }
 
-.pill-pane__wapper {
+.pill-pane__wrapper {
+  flex-direction: column;
   display: flex;
   flex-basis: 100%;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  max-height: 100vh; }
+  @media screen and (min-width: 1200px) {
+    .pill-pane__wrapper {
+      flex-direction: row; } }
 
 .pill-pane {
+  display: flex;
   padding: 0 20px 20px;
   flex-grow: 1;
   flex-shrink: 1;
-  flex-basis: 100%; }
+  flex-basis: 50%; }
   @media screen and (min-width: 1200px) {
     .pill-pane {
-      flex-basis: 50%;
-      padding: 20px 20px 20px 0; }
+      padding: 0 20px 20px 0; }
       .pill-pane:first-of-type {
         padding-left: 20px; } }
+
+.pane-container {
+  flex: 1 1 auto;
+  display: flex; }
 
 .window-content-wrapper {
   padding: 10px; }
@@ -7504,11 +7521,12 @@ nav i.nav-icon {
   display: none; }
 
 .window-container {
-  position: relative; }
+  position: relative;
+  flex-basis: 100%; }
 
 /* Window */
 .window-container {
-  min-height: 600px; }
+  overflow: auto; }
 
 .tab-content {
   flex-grow: 1;
@@ -7536,8 +7554,14 @@ nav i.nav-icon {
   .document-card .card-content {
     padding: 15px; }
 
+.card-image__wrapper {
+  position: relative;
+  height: 0;
+  padding-bottom: 100%;
+  overflow: hidden; }
+
 .document-card-image {
-  max-height: 150px;
+  position: absolute;
   width: auto;
   max-width: 100%;
   object-fit: cover; }
@@ -7560,6 +7584,12 @@ nav i.nav-icon {
 
 .ecg-button-wrapper {
   margin: 10px 10px 0; }
+
+.card-title--document {
+  max-width: 100%;
+  display: block;
+  white-space: nowrap;
+  overflow: hidden; }
 
 .vc-top-row {
   display: flex;
@@ -7608,6 +7638,7 @@ nav i.nav-icon {
     margin-right: 0; }
 
 .top-bar {
+  align-self: flex-start;
   flex-basis: 100%;
-  margin: 0 20px;
+  margin: 0 20px 20px;
   padding: 10px 10px 0; }

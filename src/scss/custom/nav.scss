@@ -1,5 +1,6 @@
 .logo-wrapper {
 	background: white;
+	max-height: 70px;
 }
 
 .navbar-brand {
@@ -13,6 +14,9 @@
 
 .application-wrapper {
 	width: 100%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
 }
 
 .navbar {
@@ -44,8 +48,12 @@
 	flex-grow: 1;
 }
 
-nav i.nav-icon {
+nav .nav-icon {
+	align-self: center;
 	display: inline-block;
+	height: 24px;
+	margin-right: 15px;
+	width: 24px;
 }
 
 .nav-item {
