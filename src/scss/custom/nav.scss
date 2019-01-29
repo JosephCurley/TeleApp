@@ -10,6 +10,7 @@
 .application-body {
 	display: flex;
 	flex-direction: row;
+	margin-bottom: 40px;
 }
 
 .application-wrapper {
@@ -36,10 +37,10 @@
 	flex-basis: 200px;
 	flex-shrink: 0;
 	background-color: $main-color;
-	height: 100vh;
 	position: sticky;
 	top: 0;
 	overflow: auto;
+	width: auto;
 }
 
 .nav {
@@ -60,7 +61,7 @@ nav .nav-icon {
 	width: 100%;
 
 	&:last-child {
-		margin-top: auto;
+		margin-top: 60px;
 		@extend .green;
 		@extend .lighten-1;
 	}

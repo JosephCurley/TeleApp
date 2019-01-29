@@ -1,8 +1,8 @@
 .patient-information__section {
-	margin-right: 20px;
 	&:last-child {
 		margin-right: 0;
 	}
+
 }
 
 .top-bar {
@@ -13,4 +13,11 @@
 	@extend .z-depth-1;
 	@extend .grey;
 	@extend .lighten-5;
+}
+
+.patient-information {
+	margin-bottom: 0;
+	@media screen and (min-width: 992) {
+		margin-bottom: 20px;
+	}
 }
