@@ -11,7 +11,8 @@
 				<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 				<!-- CSS START -->
 				<link rel="stylesheet" href="css/font-awesome.min.css">
-				<link rel="stylesheet" href="css/style.css">
+				<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/12.1.0/nouislider.min.css">
+  <link rel="stylesheet" href="css/style.css">
 				<!-- CSS END -->
 			</head>
 
@@ -158,6 +159,22 @@
 													<div class="image-area">
 															<img class="Stethoscope-image" src="./assets/stethoscope-image.png" alt="">
 													</div>
+													<div class="stethoscope-controls">
+														<label class="stethoscope-label">device:</label>
+														<div class="input-field">
+															<select>
+																<option value="0">Diaphragm</option>
+																<option selected value="1">Bell</option>
+																<optionvalue="2">Extended</option>
+															</select>
+														</div>
+															<div class="right "></div>
+														<label class="stethoscope-label">Volume:</label>
+													    <p class="range-field volume-range">
+
+													      <input type="range" id="test5" min="0" max="100" />
+													    </p>
+													</div>
 												</div>
 											</div>
 										</div>
@@ -166,8 +183,8 @@
 				</div>
 				<footer class="application-footer">
   <div class="footer-controls">
-    <a class="waves-effect waves-light btn-small btn grey darken-1">AMD LOGO</a>
-    <div class="active-users">Number of Active users: <b>3</b> </div>
+    <img class="amd-logo" src="./themes/default/AMD-Logo.png" style="max-width: 100px;">
+    <div class="active-users">Active users: <b>3</b> </div>
     <div class="right-btns">
       <a class="waves-effect waves-light btn-small btn grey darken-1">Documentation</a>
       <a class="waves-effect waves-light btn-small btn blue lighten-1">Clear Session</a>
@@ -178,6 +195,7 @@
 <!-- JS Script Start -->
 				<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 				<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-				<script src="js/main.js"></script>
+				<script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/12.1.0/nouislider.min.js"></script>
+<script src="js/main.js"></script>
 				<!-- JS Script End -->
 			</body>
