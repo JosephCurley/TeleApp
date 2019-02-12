@@ -8,6 +8,11 @@
 	@extend .lighten-1;
 	@extend .green;
 }
+
+.btn.red.red--brand {
+	background-color: $brand-red;
+}
+
 .snapshot-button,
 .vc-button--preview {
 	margin-left: auto;
@@ -21,6 +26,16 @@
 
 .vc-button {
 	margin-bottom: 10px;
+}
+
+.center-call-button {
+	position: absolute;
+	bottom: 50%;
+	left: 50%;
+	transform: translate(-50%, 50%);
+	&.is-hidden {
+		display: none;
+	}
 }
 
 .camera-controls {
@@ -60,4 +75,11 @@
 .stethoscope-label {
 	line-height: 60px;
 	margin-right: 5px;
+}
+
+.document__label-checkbox {
+	position: absolute;
+	right: -10px;
+	bottom: -33px;
+	text-align: center;
 }
