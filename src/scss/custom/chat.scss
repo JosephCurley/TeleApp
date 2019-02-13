@@ -1,0 +1,34 @@
+.chat-message {
+	@extend .z-depth-1;
+	@extend .grey;
+	@extend .lighten-4;
+	padding: 20px 10px 10px;
+	position: relative;
+	margin-bottom: 10px;
+}
+
+.chat-message__timestamp,
+.chat-message__channel {
+	font-size: 0.8em;
+	position: absolute;
+	top: 4px;
+}
+
+.chat-message__channel {
+	@extend .blue-text;
+	left: 10px;
+}
+
+.chat-message__timestamp {
+	right: 10px;
+}
+
+.chat-message__message {
+
+}
+
+.chat-container {
+	max-height: 400px;
+	overflow: auto;
+	padding-right: 20px;
+}
