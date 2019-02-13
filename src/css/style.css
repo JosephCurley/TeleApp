@@ -7599,6 +7599,9 @@ nav .nav-icon {
     font-size: 1em; }
     .title-bar__control i.large-icon {
       font-size: 2.5em; }
+    .title-bar__control i.medium-icon {
+      margin: 10px;
+      font-size: 1.5em; }
 
 .vc-top-row {
   display: flex;
@@ -7666,6 +7669,9 @@ nav .nav-icon {
   right: -10px;
   bottom: -33px;
   text-align: center; }
+
+.button-wrapper {
+  padding: 0 10px; }
 
 .patient-information__section:last-child {
   margin-right: 0; }
