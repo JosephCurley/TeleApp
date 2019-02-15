@@ -7,12 +7,14 @@
 	left: 200px;
 	right: 0;
 	min-height: 40px;
+	min-width: 568px;
 	z-index: 9;
 }
 
 .footer-controls {
 	padding: 0 10px;
 	align-items: center;
+	display: flex;
 	@extend .z-depth-1;
 	@extend .grey;
 	@extend .lighten-5;
@@ -26,8 +28,32 @@
 
 .right-btns {
 	margin-left: auto;
+	flex-basis: 50%;
+	flex-shrink: 0;
+	@media screen and (min-width: 993px) {
+		flex-basis: auto;
+	}
+}
+
+.footer-controls__left {
+	display: flex;
+	flex-basis: 50%;
+	flex-wrap: wrap;
+	flex-grow: 1;
+	justify-content: space-between;
+	@media screen and (min-width: 993px) {
+		flex-basis: auto;
+	}
+}
+
+.footer-controls__AMD {
+	display: flex;
 }
 
 .amd-logo {
 	margin-right: 10px;
+	align-self: center;
+}
+.active-users {
+	align-self: center;
 }

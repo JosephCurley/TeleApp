@@ -94,11 +94,17 @@
 						<div class="window-container">
 							<div class="window-titlebar unselectable drag-handle" unselectable="on">
 								<span class="window-title">ECG
-								<a href="#" class="title-bar__control"><i class="material-icons right large-icon">chevron_right</i></a><a href="#" class="title-bar__control"><i class="material-icons right medium-icon">help_outline</i></a></span>
+									<a href="#" class="title-bar__control">
+										<i class="material-icons right large-icon">chevron_right</i>
+									</a>
+									<a href="#" class="title-bar__control">
+										<i class="material-icons right medium-icon">help_outline</i>
+									</a>
+								</span>
 							</div>
-								<div class="ecg-button-wrapper">
-									<a class="waves-effect waves-light btn"><i class="material-icons right">launch</i>Launch ECG</a>
-								</div>
+							<div class="ecg-button-wrapper">
+								<a class="waves-effect waves-light btn"><i class="material-icons right">launch</i>Launch ECG</a>
+							</div>
 							<div class="ecg-container">
 								<img class="ecg-image" src="./assets/ecg-placement.jpg" alt="">
 							</div>
@@ -110,19 +116,33 @@
 					<div class="pane-container">
 						<div class="window-container">
 							<div class="window-titlebar unselectable drag-handle" unselectable="on">
-								<span class="window-title">Video Conference</span>
-							</div>
+								<span class="window-title">Video Conference
+									<!-- Dropdown Trigger -->
+									<a class='dropdown-trigger title-bar__control' href='#' data-target='video-settings-dropdown'>
+										<i class="material-icons">settings</i>
+									</a>
+
+									<!-- Dropdown Structure -->
+									<ul id='video-settings-dropdown' class='dropdown-content'>
+										<li><a href="#!">Settings!</a></li>
+										<li><a href="#!">Settings pt 2</a></li>
+										<li class="divider" tabindex="-1"></li>
+										<li><a href="#!">More Settings</a></li>
+									</ul>
+									<a href="#" class="title-bar__control"><i class="material-icons right medium-icon">help_outline</i></a></span>
+								</div>
+							<span>
 							<div class="vc-top-row">
 								<!-- Dropdown Trigger -->
-							  <a class='dropdown-trigger btn-small btn' href='#' data-target='call-dropdown'><i class="material-icons right">arrow_drop_down</i>Call</a>
+								<a class='dropdown-trigger btn-small btn' href='#' data-target='call-dropdown'><i class="material-icons right">arrow_drop_down</i>Call</a>
 
-							  <!-- Dropdown Structure -->
-							  <ul id='call-dropdown' class='dropdown-content'>
-							    <li><a href="#!">Dr. one</a></li>
-							    <li><a href="#!">Dr. two</a></li>
-							    <li class="divider" tabindex="-1"></li>
-							    <li><a href="#!">Dr. three</a></li>
-							  </ul>
+								<!-- Dropdown Structure -->
+								<ul id='call-dropdown' class='dropdown-content'>
+									<li><a href="#!">Dr. one</a></li>
+									<li><a href="#!">Dr. two</a></li>
+									<li class="divider" tabindex="-1"></li>
+									<li><a href="#!">Dr. three</a></li>
+								</ul>
 								<!-- <a class="vc-button waves-effect waves-light btn-small btn">Call</a> -->
 								<a class="vc-button waves-effect waves-light btn-small btn">Hang Up</a>
 								<a class="vc-button waves-effect waves-light btn-small btn">Hold</a>
@@ -179,17 +199,23 @@
 		</div>
 	</div>
 	<footer class="application-footer">
-  <div class="footer-controls">
-    <img class="amd-logo" src="./themes/default/AMD-Logo.png" style="max-width: 100px;">
-    <div class="active-users">Active users: <b>3</b> </div>
-    <div class="right-btns">
-      <a class="waves-effect waves-light btn-small btn grey darken-1">Documentation</a>
-      <a class="waves-effect waves-light btn-small btn blue lighten-1">Clear Session</a>
-      <a class="waves-effect waves-light btn-small btn red--brand red darken-4 lighten-1">Log Out</a>
-    </div>
-  </div>
-</footer>
-<!-- JS Script Start -->
+		<div class="footer-controls">
+			<div class=footer-controls__left>
+				<div class="footer-controls__AMD">
+					<img class="amd-logo" src="./themes/default/AMD-Logo.png" style="max-width: 100px;">
+					<span class="active-users">Active users: <b>3</b> </span>
+				</div>
+				<div class="active-users"><b>Station: </b>Exam Room 1</div>
+				<div class="active-users"><b>Organization: </b>AMD Global Telemedicine</div>
+			</div>
+			<div class="right-btns">
+				<a class="waves-effect waves-light btn-small btn grey darken-1">Documentation</a>
+				<a class="waves-effect waves-light btn-small btn blue lighten-1">Clear Session</a>
+				<a class="waves-effect waves-light btn-small btn red--brand red darken-4 lighten-1">Log Out</a>
+			</div>
+		</div>
+	</footer>
+	<!-- JS Script Start -->
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 	<script src="js/main.js"></script>

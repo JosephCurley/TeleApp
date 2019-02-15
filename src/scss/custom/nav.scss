@@ -10,6 +10,7 @@
 .application-body {
 	display: flex;
 	flex-direction: row;
+	min-width: 768px;
 }
 
 .application-wrapper {
