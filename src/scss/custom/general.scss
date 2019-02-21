@@ -1,0 +1,12 @@
+.application-body {
+	display: flex;
+	flex-direction: row;
+	min-width: 768px;
+}
+
+.application-wrapper {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+}

@@ -7415,13 +7415,6 @@ input[type=range]::-ms-thumb {
 .flex-column {
   flex-direction: column; }
 
-.logo-wrapper {
-  background: white;
-  max-height: 70px; }
-
-.navbar-brand {
-  display: inline-block; }
-
 .application-body {
   display: flex;
   flex-direction: row;
@@ -7430,8 +7423,15 @@ input[type=range]::-ms-thumb {
 .application-wrapper {
   width: 100%;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap; }
+
+.logo-wrapper {
+  background: white;
+  max-height: 70px; }
+
+.navbar-brand {
+  display: inline-block; }
 
 .navbar {
   display: flex;
@@ -7481,7 +7481,8 @@ nav .nav-icon {
 .pill-pane__wrapper {
   flex-direction: column;
   display: flex;
-  flex-basis: 100%;
+  flex-basis: auto;
+  flex-grow: 1;
   flex-wrap: wrap;
   padding-bottom: 100px; }
   @media screen and (min-width: 993px) {
@@ -7682,9 +7683,12 @@ nav .nav-icon {
 
 .top-bar {
   align-self: flex-start;
-  flex-basis: 100%;
+  flex-basis: auto;
+  flex-grow: 0;
   margin: 0 20px 20px;
-  padding: 10px 10px 0; }
+  padding: 0 10px; }
+  .top-bar .input-field {
+    margin-top: 0; }
 
 .patient-information {
   margin-bottom: 0; }
@@ -7763,3 +7767,13 @@ nav .nav-icon {
   max-height: 400px;
   overflow: auto;
   padding-right: 20px; }
+
+.document-card__wrapper {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap; }
+
+.document-card__container {
+  width: 150px;
+  display: inline-block;
+  padding: 0 10px; }

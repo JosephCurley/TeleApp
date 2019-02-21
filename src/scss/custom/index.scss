@@ -3,9 +3,12 @@ $button-color: #26a69a;
 $brand-red: rgb(129,43,52);
 
 @import "base";
+@import "general";
 @import "nav";
 @import "panes";
 @import "form-controls";
 @import "topbar";
 @import "footer";
-@import "chat";
+@import "modules/chat";
+@import "modules/documents";
+@import "modules/stethoscope";
