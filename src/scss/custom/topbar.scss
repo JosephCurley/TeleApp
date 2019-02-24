@@ -4,25 +4,45 @@
 	}
 
 }
+.top-bar__lower-row {
+	flex-basis: 100%;
+	margin-top: 10px;
+	display: flex;
+	padding: 0 20px;
+}
+
+.top-bar__station {
+	margin: 0 10px 0 auto;
+}
 
 .top-bar {
 	align-self: flex-start;
+	flex-wrap: wrap;
+	display: flex;
 	flex-basis: auto;
 	flex-grow: 0;
 	margin: 0 20px 20px;
-	padding: 0 10px;
+}
+
+.patient-information {
 	@extend .z-depth-1;
 	@extend .grey;
 	@extend .lighten-5;
+	padding: 0 10px;
+	margin-bottom: 0;
 
 	.input-field {
 		margin-top: 0;
 	}
-}
 
-.patient-information {
-	margin-bottom: 0;
 	@media screen and (min-width: 992) {
 		margin-bottom: 20px;
+	}
+}
+
+.customer-logo {
+	img {
+		width: auto;
+		max-height: 50px;
 	}
 }

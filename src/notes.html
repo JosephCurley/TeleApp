@@ -24,37 +24,37 @@
 			</div>
 			<ul class="nav">
 				<li class="nav-item"><a class="nav-link" href="./documents.html">
-								<i class="left large material-icons">folder_shared</i>
-								<span class="translate">Documents</span></a>
+					<i class="left large material-icons">folder_shared</i>
+					<span class="translate">Documents</span></a>
 				</li>
 				<li class="nav-item"><a class="nav-link" href="./video-conference.html">
-								<i class="left large material-icons">video_call</i>
-								<span class="translate">Video Conference</span></a>
+					<i class="left large material-icons">video_call</i>
+					<span class="translate">Video Conference</span></a>
 				</li>
 				<li class="nav-item"><a class="nav-link" href="./vital.html">
-								<i class="left large material-icons">show_chart</i>
-								<span class="translate">Vitals</span></a>
+			<i class="left large material-icons">show_chart</i>
+			<span class="translate">Vitals</span></a>
 				</li>
 				<li class="nav-item"><a class="nav-link" href="./Stethoscope.html">
-								<img  class="nav-icon" src="./assets/icons/Stethoscope.svg" alt="">
-								<span class="translate">Stethoscope</span></a>
+			<img  class="nav-icon" src="./assets/icons/Stethoscope.svg" alt="">
+			<span class="translate">Stethoscope</span></a>
 				</li>
 				<li class="nav-item"><a class="nav-link" href="./medical-video.html">
-								<img  class="nav-icon" src="./assets/icons/webcam.svg" alt="">
-								<span class="translate">Medical Video</span></a>
+			<img  class="nav-icon" src="./assets/icons/webcam.svg" alt="">
+			<span class="translate">Medical Video</span></a>
 				</li>
 				<li class="nav-item"><a class="nav-link" href="./ecg.html">
-										<img  class="nav-icon" src="./assets/icons/medical.svg" alt="">
-										<span class="translate">ECG</span></a>
+					<img  class="nav-icon" src="./assets/icons/medical.svg" alt="">
+					<span class="translate">ECG</span></a>
 				</li>
 				<li class="nav-item"><a class="nav-link" href="./notes.html">
-										<i class="left large material-icons">notes</i>
-										<span class="translate">Notes</span></a>
+					<i class="left large material-icons">notes</i>
+					<span class="translate">Notes</span></a>
 				</li>
 
 				<li class="nav-item"><a class="nav-link" href="./chat.html">
-										<i class="left large material-icons">chat_bubble_outline</i>
-										<span class="translate">Chat</span></a>
+					<i class="left large material-icons">chat_bubble_outline</i>
+					<span class="translate">Chat</span></a>
 				</li>
 			</ul>
 		</nav>
@@ -62,40 +62,52 @@
 			<div class="top-bar">
 				<div class="patient-information row">
 					<div class="input-field col s4 m3 l2">
-						<input id="p-name" type="text" class="validate" placeholder="First Name">
-					</div>
-
-					<div class="input-field col s4 m3 l2">
-						<input id="p-age" type="text" class="validate" placeholder="Last Name">
+						<input id="p-name" type="text" class="validate" placeholder="First Name:">
 					</div>
 					<div class="input-field col s4 m3 l2">
-						<input id="p-height" type="text" class="validate" placeholder="Middle Initial">
+						<input id="p-age" type="text" class="validate" placeholder="Last Name:">
+					</div>
+					<div class="input-field col s2 m3 l1">
+						<input id="p-height" type="text" class="validate" placeholder="MI:">
 					</div>
 					<div class="input-field col s4 m3 l2">
-						<input id="p-weight" type="text" class="validate" placeholder="Patient I.D.">
+						<input id="p-weight" type="text" class="validate" placeholder="Patient ID:">
 					</div>
-					<div class="input-field col s4 m3 l1">
-						<input id="p-blood_pressure" type="text" class="validate" placeholder="Sex">
+					<div class="input-field col s3 m3 l2">
+						<input id="p-blood_pressure" type="text" class="validate" placeholder="Sex:">
 					</div>
-					<div class="input-field col s4 m3 l2">
-						<input id="p-blood_pressure" type="text" class="validate" placeholder="Birth Date:">
+					<div class="input-field col s3 m3 l2">
+						<input id="p-blood_pressure" type="text" class="validate" placeholder="DOB:">
+					</div>
+					<div class="customer-logo col s2 m2 l1">
+						<img  class="nav-icon" src="./assets/icons/logo.png" alt="Your Logo here">
 					</div>
 				</div>
+				<div class="top-bar__lower-row">
+					<div class="top-bar__station"><b>Station: </b>Exam Room 1</div>
+					<div class="top-bar__organization"><b>Organization: </b>AMD Global Telemedicine</div>
 			</div>
-
+			</div>
 			<div class="pill-pane__wrapper">
 				<div class="pill-pane application-pill-pane app-pill-pane-tab active">
 					<div class="pane-container">
 						<div class="window-container">
 							<div class="window-titlebar unselectable drag-handle" unselectable="on">
-								<span class="window-title">Notes
-									<a href="#" class="title-bar__control">
-										<i class="material-icons right large-icon">chevron_right</i>
-									</a>
-									<a href="#" class="title-bar__control">
-										<i class="material-icons right medium-icon">help_outline</i>
-									</a>
-								</span>
+									<div class="window-title">
+										<div class="window-title__text">
+											<i class="material-icons title-bar__icon">notes</i>
+											<span class="title-bar__title">Notes</span>
+										</div>
+
+										<div class="window-titlebar__controls">
+											<a href="#" class="title-bar__control" title="Move Pane to Right">
+												<i class="material-icons large-icon">chevron_right</i>
+											</a>
+											<a href="#" class="title-bar__control" title="Help">
+												<i class="material-icons medium-icon">help_outline</i>
+											</a>
+										</div>
+									</div>
 							</div>
 							<div class="window-content-wrapper">
 								<div class="row">
@@ -135,11 +147,20 @@
 					<div class="pane-container">
 						<div class="window-container">
 							<div class="window-titlebar unselectable drag-handle" unselectable="on">
-								<span class="window-title">Chat
-									<a href="#" class="title-bar__control">
-										<i class="material-icons right medium-icon">help_outline</i>
-									</a>
-								</span>
+								<div class="window-title">
+									<div class="window-title__text">
+										<i class="material-icons title-bar__icon">chat</i>
+										<span class="title-bar__title">chat</span>
+									</div>
+									<div class="window-titlebar__controls">
+										<a href="#" class="title-bar__control" title="Close Tab">
+											<i class="material-icons medium-icon">close</i>
+										</a>
+										<a href="#" class="title-bar__control" title="Help">
+											<i class="material-icons medium-icon">help_outline</i>
+										</a>
+									</div>
+								</div>
 							</div>
 							<div class="window-content-wrapper">
 								<div class="row">
@@ -217,13 +238,11 @@
 					<img class="amd-logo" src="./themes/default/AMD-Logo.png" style="max-width: 100px;">
 					<span class="active-users">Active users: <b>3</b> </span>
 				</div>
-				<div class="active-users"><b>Station: </b>Exam Room 1</div>
-				<div class="active-users"><b>Organization: </b>AMD Global Telemedicine</div>
 			</div>
 			<div class="right-btns">
 				<a class="waves-effect waves-light btn-small btn grey darken-1">Documentation</a>
 				<a class="waves-effect waves-light btn-small btn blue lighten-1">Clear Session</a>
-				<a class="waves-effect waves-light btn-small btn red--brand red darken-4 lighten-1">Log Out</a>
+				<a class="waves-effect waves-light btn-small btn grey darken-3 lighten-1">Log Out</a>
 			</div>
 		</div>
 	</footer>

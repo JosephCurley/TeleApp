@@ -42,6 +42,7 @@
 	height: 40px;
 }
 .window-title {
+	position: relative;
 	display: block;
 	height: 40px;
 	line-height: 40px;
@@ -142,21 +143,37 @@
 	white-space: nowrap;
 	overflow: hidden;
 }
+.window-titlebar__controls {
+	position: absolute;
+	right: 0;
+	top: 0;
+}
 
 .title-bar__control {
-	margin: 0 10px;
+	float: right;
+	margin: 0 5px;
 	color: white;
 	i {
 		font-size: 1em;
-
+		height: 40px;
+		line-height: 40px;
 		&.large-icon {
 			font-size: 2.5em;
 		}
 		&.medium-icon {
-			margin: 10px;
 			font-size: 1.5em;
 		}
 	}
+}
+.title-bar__title {
+	line-height: 40px;
+	height: 40px;
+	vertical-align: top;
+}
+.title-bar__icon {
+	color: white;
+	margin: 10px;
+	font-size: 1.5em;
 }
 .stethoscope-image {
 	max-width: 100%;

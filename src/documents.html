@@ -86,17 +86,24 @@
 				<div class="pill-pane application-pill-pane app-pill-pane-tab active">
 					<div class="pane-container">
 						<div class="window-container">
-							<div class="window-titlebar unselectable drag-handle" unselectable="on">
-								<span class="window-title">
-									<span>Documents</span>
-									<a href="#" class="title-bar__control">
-										<i class="material-icons right large-icon">chevron_right</i>
-									</a>
-									<a href="#" class="title-bar__control">
-										<i class="material-icons right medium-icon">help_outline</i>
-									</a>
-									</span>
-								</span>
+							<div class="bar unselectable drag-handle" unselectable="on">
+								<div class="window-titlebar unselectable drag-handle" unselectable="on">
+								<div class="window-title">
+									<div class="window-title__text">
+										<i class="material-icons title-bar__icon">folder_shared</i>
+										<span class="title-bar__title">Documents</span>
+									</div>
+
+									<div class="window-titlebar__controls">
+										<a href="#" class="title-bar__control" title="Move Pane to Right">
+											<i class="material-icons large-icon">chevron_right</i>
+										</a>
+										<a href="#" class="title-bar__control" title="Help">
+											<i class="material-icons medium-icon">help_outline</i>
+										</a>
+									</div>
+								</div>
+							</div>
 							</div>
 							<div class="document-container">
 								<div class="row">
@@ -256,13 +263,23 @@
 					<div class="pane-container">
 						<div class="window-container">
 							<div class="window-titlebar unselectable drag-handle" unselectable="on">
-								<span class="window-title">
-									<span>Video Conference<span>
-										<!-- Dropdown Trigger -->
-										<a class='dropdown-trigger title-bar__control' href='#' data-target='video-settings-dropdown'>
-											<i class="material-icons">settings</i>
-										</a>
+								<div class="window-title">
+									<div class="window-title__text">
+										<i class="material-icons title-bar__icon">video_call</i>
+										<span class="title-bar__title">Video Conference</span>
+									</div>
 
+									<div class="window-titlebar__controls">
+										<a href="#" class="title-bar__control" title="Close Tab">
+											<i class="material-icons medium-icon">close</i>
+										</a>
+										<a href="#" class="title-bar__control" title="Help">
+											<i class="material-icons medium-icon">help_outline</i>
+										</a>
+										<!-- Dropdown Trigger -->
+										<a class='dropdown-trigger title-bar__control' href='#' data-target='video-settings-dropdown' title="Video conference settings">
+											<i class="material-icons medium-icon">settings</i>
+										</a>
 										<!-- Dropdown Structure -->
 										<ul id='video-settings-dropdown' class='dropdown-content'>
 											<li><a href="#!">Settings!</a></li>
@@ -270,8 +287,8 @@
 											<li class="divider" tabindex="-1"></li>
 											<li><a href="#!">More Settings</a></li>
 										</ul>
-										<a href="#" class="title-bar__control"><i class="material-icons right medium-icon">help_outline</i></a></span>
-
+									</div>
+								</div>
 							</div>
 							<div class="vc-top-row">
 								<!-- Dropdown Trigger -->
@@ -287,7 +304,7 @@
 								<!-- <a class="vc-button waves-effect waves-light btn-small btn">Call</a> -->
 								<a class="vc-button waves-effect waves-light btn-small btn">Hang Up</a>
 								<a class="vc-button waves-effect waves-light btn-small btn">Hold</a>
-								<a class="vc-button vc-button--preview waves-effect waves-light btn-small btn">Preview</a>
+								<a class="vc-button vc-button--preview waves-effect waves-light btn-small btn">Self View</a>
 							</div>
 							<div class="button-group">
 								<div class="switch vc-switch">
@@ -322,15 +339,15 @@
 						</div>
 						<div class="video-area">
 							<div class="camera-controls" draggable="true">
-								<a class="cc-button cc-button-up btn-floating btn-small waves-effect waves-light red--brand red darken-4"><i class="material-icons">expand_less</i></a>
-								<a class="cc-button cc-button-left btn-floating btn-small waves-effect waves-light red--brand red darken-4"><i class="material-icons">chevron_left</i></a>
-								<a class="cc-button cc-button-stop btn-floating btn-small waves-effect waves-light red--brand red darken-4"><i class="material-icons">stop</i></a>
-								<a class="cc-button cc-button-right btn-floating btn-small waves-effect waves-light red--brand red darken-4"><i class="material-icons">chevron_right</i></a>
-								<a class="cc-button cc-button-down btn-floating btn-small waves-effect waves-light red--brand red darken-4"><i class="material-icons">expand_more</i></a>
+								<a class="cc-button cc-button-up btn-floating btn-small waves-effect waves-light grey darken-3"><i class="material-icons">expand_less</i></a>
+								<a class="cc-button cc-button-left btn-floating btn-small waves-effect waves-light grey darken-3"><i class="material-icons">chevron_left</i></a>
+								<a class="cc-button cc-button-stop btn-floating btn-small waves-effect waves-light grey darken-3"><i class="material-icons">stop</i></a>
+								<a class="cc-button cc-button-right btn-floating btn-small waves-effect waves-light grey darken-3"><i class="material-icons">chevron_right</i></a>
+								<a class="cc-button cc-button-down btn-floating btn-small waves-effect waves-light grey darken-3"><i class="material-icons">expand_more</i></a>
 							</div>
 							<div class="camera-controls camera-controls--zoom" draggable="true">
-								<a class="cc-button cc-button-up btn-floating btn-small waves-effect waves-light red--brand red darken-4"><i class="material-icons">add</i></a>
-								<a class="cc-button cc-button-down btn-floating btn-small waves-effect waves-light red--brand red darken-4"><i class="material-icons">remove</i></a>
+								<a class="cc-button cc-button-up btn-floating btn-small waves-effect waves-light grey darken-3"><i class="material-icons">add</i></a>
+								<a class="cc-button cc-button-down btn-floating btn-small waves-effect waves-light grey darken-3"><i class="material-icons">remove</i></a>
 							</div>
 						</div>
 					</div>
@@ -352,7 +369,7 @@
 			<div class="right-btns">
 				<a class="waves-effect waves-light btn-small btn grey darken-1">Documentation</a>
 				<a class="waves-effect waves-light btn-small btn blue lighten-1">Clear Session</a>
-				<a class="waves-effect waves-light btn-small btn red--brand red darken-4 lighten-1">Log Out</a>
+				<a class="waves-effect waves-light btn-small btn grey darken-3 lighten-1">Log Out</a>
 			</div>
 		</div>
 	</footer>

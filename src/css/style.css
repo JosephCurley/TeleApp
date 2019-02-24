@@ -35,7 +35,7 @@
 .materialize-red-text {
   color: #e51c23 !important; }
 
-.materialize-red.lighten-5, .materialize-red.top-bar, .materialize-red.footer-controls {
+.materialize-red.lighten-5, .materialize-red.patient-information, .materialize-red.footer-controls {
   background-color: #fdeaeb !important; }
 
 .materialize-red-text.text-lighten-5 {
@@ -95,7 +95,7 @@
 .red-text {
   color: #F44336 !important; }
 
-.red.lighten-5, .red.top-bar, .red.footer-controls {
+.red.lighten-5, .red.patient-information, .red.footer-controls {
   background-color: #FFEBEE !important; }
 
 .red-text.text-lighten-5 {
@@ -179,7 +179,7 @@
 .pink-text {
   color: #e91e63 !important; }
 
-.pink.lighten-5, .pink.top-bar, .pink.footer-controls {
+.pink.lighten-5, .pink.patient-information, .pink.footer-controls {
   background-color: #fce4ec !important; }
 
 .pink-text.text-lighten-5 {
@@ -263,7 +263,7 @@
 .purple-text {
   color: #9c27b0 !important; }
 
-.purple.lighten-5, .purple.top-bar, .purple.footer-controls {
+.purple.lighten-5, .purple.patient-information, .purple.footer-controls {
   background-color: #f3e5f5 !important; }
 
 .purple-text.text-lighten-5 {
@@ -347,7 +347,7 @@
 .deep-purple-text {
   color: #673ab7 !important; }
 
-.deep-purple.lighten-5, .deep-purple.top-bar, .deep-purple.footer-controls {
+.deep-purple.lighten-5, .deep-purple.patient-information, .deep-purple.footer-controls {
   background-color: #ede7f6 !important; }
 
 .deep-purple-text.text-lighten-5 {
@@ -431,7 +431,7 @@
 .indigo-text {
   color: #3f51b5 !important; }
 
-.indigo.lighten-5, .indigo.top-bar, .indigo.footer-controls {
+.indigo.lighten-5, .indigo.patient-information, .indigo.footer-controls {
   background-color: #e8eaf6 !important; }
 
 .indigo-text.text-lighten-5 {
@@ -515,7 +515,7 @@
 .blue-text, .chat-message__channel {
   color: #2196F3 !important; }
 
-.blue.lighten-5, .blue.top-bar, .blue.footer-controls {
+.blue.lighten-5, .blue.patient-information, .blue.footer-controls {
   background-color: #E3F2FD !important; }
 
 .blue-text.text-lighten-5, .text-lighten-5.chat-message__channel {
@@ -599,7 +599,7 @@
 .light-blue-text {
   color: #03a9f4 !important; }
 
-.light-blue.lighten-5, .light-blue.top-bar, .light-blue.footer-controls {
+.light-blue.lighten-5, .light-blue.patient-information, .light-blue.footer-controls {
   background-color: #e1f5fe !important; }
 
 .light-blue-text.text-lighten-5 {
@@ -683,7 +683,7 @@
 .cyan-text {
   color: #00bcd4 !important; }
 
-.cyan.lighten-5, .cyan.top-bar, .cyan.footer-controls {
+.cyan.lighten-5, .cyan.patient-information, .cyan.footer-controls {
   background-color: #e0f7fa !important; }
 
 .cyan-text.text-lighten-5 {
@@ -767,7 +767,7 @@
 .teal-text {
   color: #009688 !important; }
 
-.teal.lighten-5, .teal.top-bar, .teal.footer-controls {
+.teal.lighten-5, .teal.patient-information, .teal.footer-controls {
   background-color: #e0f2f1 !important; }
 
 .teal-text.text-lighten-5 {
@@ -851,7 +851,7 @@
 .green-text {
   color: #4CAF50 !important; }
 
-.green.lighten-5, .lighten-5.nav-item:last-child, .nav-item.top-bar:last-child, .nav-item.footer-controls:last-child, .lighten-5.btn, .btn.top-bar, .btn.footer-controls, .green.top-bar, .green.footer-controls {
+.green.lighten-5, .lighten-5.nav-item:last-child, .nav-item.patient-information:last-child, .nav-item.footer-controls:last-child, .lighten-5.btn, .btn.patient-information, .btn.footer-controls, .green.patient-information, .green.footer-controls {
   background-color: #E8F5E9 !important; }
 
 .green-text.text-lighten-5 {
@@ -935,7 +935,7 @@
 .light-green-text {
   color: #8bc34a !important; }
 
-.light-green.lighten-5, .light-green.top-bar, .light-green.footer-controls {
+.light-green.lighten-5, .light-green.patient-information, .light-green.footer-controls {
   background-color: #f1f8e9 !important; }
 
 .light-green-text.text-lighten-5 {
@@ -1019,7 +1019,7 @@
 .lime-text {
   color: #cddc39 !important; }
 
-.lime.lighten-5, .lime.top-bar, .lime.footer-controls {
+.lime.lighten-5, .lime.patient-information, .lime.footer-controls {
   background-color: #f9fbe7 !important; }
 
 .lime-text.text-lighten-5 {
@@ -1103,7 +1103,7 @@
 .yellow-text {
   color: #ffeb3b !important; }
 
-.yellow.lighten-5, .yellow.top-bar, .yellow.footer-controls {
+.yellow.lighten-5, .yellow.patient-information, .yellow.footer-controls {
   background-color: #fffde7 !important; }
 
 .yellow-text.text-lighten-5 {
@@ -1187,7 +1187,7 @@
 .amber-text {
   color: #ffc107 !important; }
 
-.amber.lighten-5, .amber.top-bar, .amber.footer-controls {
+.amber.lighten-5, .amber.patient-information, .amber.footer-controls {
   background-color: #fff8e1 !important; }
 
 .amber-text.text-lighten-5 {
@@ -1271,7 +1271,7 @@
 .orange-text {
   color: #ff9800 !important; }
 
-.orange.lighten-5, .orange.top-bar, .orange.footer-controls {
+.orange.lighten-5, .orange.patient-information, .orange.footer-controls {
   background-color: #fff3e0 !important; }
 
 .orange-text.text-lighten-5 {
@@ -1355,7 +1355,7 @@
 .deep-orange-text {
   color: #ff5722 !important; }
 
-.deep-orange.lighten-5, .deep-orange.top-bar, .deep-orange.footer-controls {
+.deep-orange.lighten-5, .deep-orange.patient-information, .deep-orange.footer-controls {
   background-color: #fbe9e7 !important; }
 
 .deep-orange-text.text-lighten-5 {
@@ -1439,7 +1439,7 @@
 .brown-text {
   color: #795548 !important; }
 
-.brown.lighten-5, .brown.top-bar, .brown.footer-controls {
+.brown.lighten-5, .brown.patient-information, .brown.footer-controls {
   background-color: #efebe9 !important; }
 
 .brown-text.text-lighten-5 {
@@ -1499,7 +1499,7 @@
 .blue-grey-text {
   color: #607d8b !important; }
 
-.blue-grey.lighten-5, .blue-grey.top-bar, .blue-grey.footer-controls {
+.blue-grey.lighten-5, .blue-grey.patient-information, .blue-grey.footer-controls {
   background-color: #eceff1 !important; }
 
 .blue-grey-text.text-lighten-5 {
@@ -1553,61 +1553,61 @@
 .blue-grey-text.text-darken-4 {
   color: #263238 !important; }
 
-.grey, .image-area, .top-bar, .footer-controls, .chat-message {
+.grey, .image-area, .patient-information, .footer-controls, .chat-message {
   background-color: #9e9e9e !important; }
 
 .grey-text {
   color: #9e9e9e !important; }
 
-.grey.lighten-5, .lighten-5.image-area, .top-bar, .footer-controls, .lighten-5.chat-message {
+.grey.lighten-5, .lighten-5.image-area, .patient-information, .footer-controls, .lighten-5.chat-message {
   background-color: #fafafa !important; }
 
 .grey-text.text-lighten-5 {
   color: #fafafa !important; }
 
-.grey.lighten-4, .lighten-4.image-area, .lighten-4.top-bar, .lighten-4.footer-controls, .chat-message {
+.grey.lighten-4, .lighten-4.image-area, .lighten-4.patient-information, .lighten-4.footer-controls, .chat-message {
   background-color: #f5f5f5 !important; }
 
 .grey-text.text-lighten-4 {
   color: #f5f5f5 !important; }
 
-.grey.lighten-3, .image-area, .lighten-3.top-bar, .lighten-3.footer-controls, .lighten-3.chat-message {
+.grey.lighten-3, .image-area, .lighten-3.patient-information, .lighten-3.footer-controls, .lighten-3.chat-message {
   background-color: #eeeeee !important; }
 
 .grey-text.text-lighten-3 {
   color: #eeeeee !important; }
 
-.grey.lighten-2, .lighten-2.image-area, .lighten-2.top-bar, .lighten-2.footer-controls, .lighten-2.chat-message {
+.grey.lighten-2, .lighten-2.image-area, .lighten-2.patient-information, .lighten-2.footer-controls, .lighten-2.chat-message {
   background-color: #e0e0e0 !important; }
 
 .grey-text.text-lighten-2 {
   color: #e0e0e0 !important; }
 
-.grey.lighten-1, .grey.nav-item:last-child, .nav-item.image-area:last-child, .nav-item.top-bar:last-child, .nav-item.footer-controls:last-child, .nav-item.chat-message:last-child, .lighten-1.image-area, .image-area.btn, .grey.btn, .btn.top-bar, .btn.footer-controls, .btn.chat-message, .lighten-1.top-bar, .lighten-1.footer-controls, .lighten-1.chat-message {
+.grey.lighten-1, .grey.nav-item:last-child, .nav-item.image-area:last-child, .nav-item.patient-information:last-child, .nav-item.footer-controls:last-child, .nav-item.chat-message:last-child, .lighten-1.image-area, .image-area.btn, .grey.btn, .btn.patient-information, .btn.footer-controls, .btn.chat-message, .lighten-1.patient-information, .lighten-1.footer-controls, .lighten-1.chat-message {
   background-color: #bdbdbd !important; }
 
 .grey-text.text-lighten-1 {
   color: #bdbdbd !important; }
 
-.grey.darken-1, .darken-1.image-area, .darken-1.top-bar, .darken-1.footer-controls, .darken-1.chat-message {
+.grey.darken-1, .darken-1.image-area, .darken-1.patient-information, .darken-1.footer-controls, .darken-1.chat-message {
   background-color: #757575 !important; }
 
 .grey-text.text-darken-1 {
   color: #757575 !important; }
 
-.grey.darken-2, .darken-2.image-area, .darken-2.top-bar, .darken-2.footer-controls, .darken-2.chat-message {
+.grey.darken-2, .darken-2.image-area, .darken-2.patient-information, .darken-2.footer-controls, .darken-2.chat-message {
   background-color: #616161 !important; }
 
 .grey-text.text-darken-2 {
   color: #616161 !important; }
 
-.grey.darken-3, .darken-3.image-area, .darken-3.top-bar, .darken-3.footer-controls, .darken-3.chat-message {
+.grey.darken-3, .darken-3.image-area, .darken-3.patient-information, .darken-3.footer-controls, .darken-3.chat-message {
   background-color: #424242 !important; }
 
 .grey-text.text-darken-3 {
   color: #424242 !important; }
 
-.grey.darken-4, .darken-4.image-area, .darken-4.top-bar, .darken-4.footer-controls, .darken-4.chat-message {
+.grey.darken-4, .darken-4.image-area, .darken-4.patient-information, .darken-4.footer-controls, .darken-4.chat-message {
   background-color: #212121 !important; }
 
 .grey-text.text-darken-4 {
@@ -2072,7 +2072,7 @@ a {
   box-shadow: none !important; }
 
 /* 2dp elevation modified*/
-.z-depth-1, .top-bar, .footer-controls, .chat-message, nav, .card-panel, .card, .toast, .btn, .btn-large, .btn-small, .btn-floating, .dropdown-content, .collapsible, .sidenav {
+.z-depth-1, .patient-information, .footer-controls, .chat-message, nav, .card-panel, .card, .toast, .btn, .btn-large, .btn-small, .btn-floating, .dropdown-content, .collapsible, .sidenav {
   -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2); }
 
@@ -7516,6 +7516,7 @@ nav .nav-icon {
   height: 40px; }
 
 .window-title {
+  position: relative;
   display: block;
   height: 40px;
   line-height: 40px; }
@@ -7594,16 +7595,33 @@ nav .nav-icon {
   white-space: nowrap;
   overflow: hidden; }
 
+.window-titlebar__controls {
+  position: absolute;
+  right: 0;
+  top: 0; }
+
 .title-bar__control {
-  margin: 0 10px;
+  float: right;
+  margin: 0 5px;
   color: white; }
   .title-bar__control i {
-    font-size: 1em; }
+    font-size: 1em;
+    height: 40px;
+    line-height: 40px; }
     .title-bar__control i.large-icon {
       font-size: 2.5em; }
     .title-bar__control i.medium-icon {
-      margin: 10px;
       font-size: 1.5em; }
+
+.title-bar__title {
+  line-height: 40px;
+  height: 40px;
+  vertical-align: top; }
+
+.title-bar__icon {
+  color: white;
+  margin: 10px;
+  font-size: 1.5em; }
 
 .stethoscope-image {
   max-width: 100%; }
@@ -7612,9 +7630,6 @@ nav .nav-icon {
   display: flex;
   flex-wrap: wrap;
   margin: 10px 10px 0; }
-
-.btn.red.red--brand {
-  background-color: #812b34; }
 
 .snapshot-button,
 .vc-button--preview {
@@ -7681,20 +7696,35 @@ nav .nav-icon {
 .patient-information__section:last-child {
   margin-right: 0; }
 
+.top-bar__lower-row {
+  flex-basis: 100%;
+  margin-top: 10px;
+  display: flex;
+  padding: 0 20px; }
+
+.top-bar__station {
+  margin: 0 10px 0 auto; }
+
 .top-bar {
   align-self: flex-start;
+  flex-wrap: wrap;
+  display: flex;
   flex-basis: auto;
   flex-grow: 0;
-  margin: 0 20px 20px;
-  padding: 0 10px; }
-  .top-bar .input-field {
-    margin-top: 0; }
+  margin: 0 20px 20px; }
 
 .patient-information {
+  padding: 0 10px;
   margin-bottom: 0; }
+  .patient-information .input-field {
+    margin-top: 0; }
   @media screen and (min-width: 992) {
     .patient-information {
       margin-bottom: 20px; } }
+
+.customer-logo img {
+  width: auto;
+  max-height: 50px; }
 
 .application-footer {
   align-self: flex-start;
