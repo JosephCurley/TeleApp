@@ -88,14 +88,26 @@
 					<div class="top-bar__organization"><b>Organization: </b>AMD Global Telemedicine</div>
 			</div>
 			</div>
-
 			<div class="pill-pane__wrapper">
 				<div class="pill-pane application-pill-pane app-pill-pane-tab active">
 					<div class="pane-container">
 						<div class="window-container">
 							<div class="window-titlebar unselectable drag-handle" unselectable="on">
-								<span class="window-title">Vitals
-									<a href="#" class="title-bar__control"><i class="material-icons right large-icon">chevron_right</i></a><a href="#" class="title-bar__control"><i class="material-icons right medium-icon">help_outline</i></a></span>
+								<div class="window-title">
+									<div class="window-title__text">
+										<i class="material-icons title-bar__icon">show_chart</i>
+										<span class="title-bar__title">Vitals</span>
+									</div>
+
+									<div class="window-titlebar__controls">
+										<a href="#" class="title-bar__control" title="Move Pane to Right">
+											<i class="material-icons large-icon">chevron_right</i>
+										</a>
+										<a href="#" class="title-bar__control" title="Help">
+											<i class="material-icons medium-icon">help_outline</i>
+										</a>
+									</div>
+								</div>
 							</div>
 							<div class="vitals-container">
 								<div class="row">
@@ -119,10 +131,13 @@
 										<input placeholder="No data" id="height" type="text" class="validate">
 										<label class="active" for="height">Height (inches)</label>
 									</div>
-									<div class="input-field col s2">
-										<input placeholder="No data" id="first_name" type="text" class="validate">
-										<label class="active" for="first_name">Weight (LB)</label>
+									<div class="input-field col s4">
+										<input placeholder="No data" id="weight" type="text" class="validate">
+										<label class="active" for="weight">Weight (LB)</label>
 									</div>
+								</div>
+								<div class="button-wrapper">
+									<a class="vc-button snapshot-button waves-effect waves-light btn-small btn grey darken-3 lighten-1">Take Snapshot</a>
 								</div>
 							</div>
 						</div>
@@ -133,9 +148,20 @@
 					<div class="pane-container">
 						<div class="window-container">
 							<div class="window-titlebar unselectable drag-handle" unselectable="on">
-								<span class="window-title">Medical Video
-									<a href="#" class="title-bar__control"><i class="material-icons right medium-icon">help_outline</i></a></span>
-								</span>
+								<div class="window-title">
+									<div class="window-title__text">
+										<img class="title-bar__icon" src="./assets/icons/webcam.svg" alt="">
+										<span class="title-bar__title">Medical Video</span>
+									</div>
+									<div class="window-titlebar__controls">
+										<a href="#" class="title-bar__control" title="Close Tab">
+											<i class="material-icons medium-icon">close</i>
+										</a>
+										<a href="#" class="title-bar__control" title="Help">
+											<i class="material-icons medium-icon">help_outline</i>
+										</a>
+									</div>
+								</div>
 							</div>
 							<div class="vc-top-row">
 								<!-- Dropdown Trigger -->
@@ -160,7 +186,6 @@
 			</div>
 		</div>
 	</div>
-
 	<footer class="application-footer">
 		<div class="footer-controls">
 			<div class=footer-controls__left>
@@ -168,6 +193,7 @@
 					<img class="amd-logo" src="./themes/default/AMD-Logo.png" style="max-width: 100px;">
 					<span class="active-users">Active users: <b>3</b> </span>
 				</div>
+
 			</div>
 			<div class="right-btns">
 				<a class="waves-effect waves-light btn-small btn grey darken-1">Documentation</a>

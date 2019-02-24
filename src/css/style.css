@@ -7621,7 +7621,10 @@ nav .nav-icon {
 .title-bar__icon {
   color: white;
   margin: 10px;
-  font-size: 1.5em; }
+  font-size: 1.5em;
+  max-height: 24px;
+  display: inline-block;
+  max-width: 24px; }
 
 .stethoscope-image {
   max-width: 100%; }
