@@ -71,7 +71,7 @@
 .materialize-red-text.text-darken-1 {
   color: #d0181e !important; }
 
-.materialize-red.darken-2 {
+.materialize-red.darken-2, .materialize-red.nav-item.active {
   background-color: #b9151b !important; }
 
 .materialize-red-text.text-darken-2 {
@@ -131,7 +131,7 @@
 .red-text.text-darken-1 {
   color: #E53935 !important; }
 
-.red.darken-2 {
+.red.darken-2, .red.nav-item.active {
   background-color: #D32F2F !important; }
 
 .red-text.text-darken-2 {
@@ -215,7 +215,7 @@
 .pink-text.text-darken-1 {
   color: #d81b60 !important; }
 
-.pink.darken-2 {
+.pink.darken-2, .pink.nav-item.active {
   background-color: #c2185b !important; }
 
 .pink-text.text-darken-2 {
@@ -299,7 +299,7 @@
 .purple-text.text-darken-1 {
   color: #8e24aa !important; }
 
-.purple.darken-2 {
+.purple.darken-2, .purple.nav-item.active {
   background-color: #7b1fa2 !important; }
 
 .purple-text.text-darken-2 {
@@ -383,7 +383,7 @@
 .deep-purple-text.text-darken-1 {
   color: #5e35b1 !important; }
 
-.deep-purple.darken-2 {
+.deep-purple.darken-2, .deep-purple.nav-item.active {
   background-color: #512da8 !important; }
 
 .deep-purple-text.text-darken-2 {
@@ -467,7 +467,7 @@
 .indigo-text.text-darken-1 {
   color: #3949ab !important; }
 
-.indigo.darken-2 {
+.indigo.darken-2, .indigo.nav-item.active {
   background-color: #303f9f !important; }
 
 .indigo-text.text-darken-2 {
@@ -551,7 +551,7 @@
 .blue-text.text-darken-1, .text-darken-1.chat-message__channel {
   color: #1E88E5 !important; }
 
-.blue.darken-2 {
+.blue.darken-2, .blue.nav-item.active {
   background-color: #1976D2 !important; }
 
 .blue-text.text-darken-2, .text-darken-2.chat-message__channel {
@@ -635,7 +635,7 @@
 .light-blue-text.text-darken-1 {
   color: #039be5 !important; }
 
-.light-blue.darken-2 {
+.light-blue.darken-2, .light-blue.nav-item.active {
   background-color: #0288d1 !important; }
 
 .light-blue-text.text-darken-2 {
@@ -719,7 +719,7 @@
 .cyan-text.text-darken-1 {
   color: #00acc1 !important; }
 
-.cyan.darken-2 {
+.cyan.darken-2, .cyan.nav-item.active {
   background-color: #0097a7 !important; }
 
 .cyan-text.text-darken-2 {
@@ -803,7 +803,7 @@
 .teal-text.text-darken-1 {
   color: #00897b !important; }
 
-.teal.darken-2 {
+.teal.darken-2, .teal.nav-item.active {
   background-color: #00796b !important; }
 
 .teal-text.text-darken-2 {
@@ -887,7 +887,7 @@
 .green-text.text-darken-1 {
   color: #43A047 !important; }
 
-.green.darken-2, .darken-2.nav-item:last-child, .darken-2.btn {
+.green.darken-2, .green.nav-item.active, .nav-item.active:last-child, .nav-item.active.btn, .darken-2.nav-item:last-child, .darken-2.btn {
   background-color: #388E3C !important; }
 
 .green-text.text-darken-2 {
@@ -971,7 +971,7 @@
 .light-green-text.text-darken-1 {
   color: #7cb342 !important; }
 
-.light-green.darken-2 {
+.light-green.darken-2, .light-green.nav-item.active {
   background-color: #689f38 !important; }
 
 .light-green-text.text-darken-2 {
@@ -1055,7 +1055,7 @@
 .lime-text.text-darken-1 {
   color: #c0ca33 !important; }
 
-.lime.darken-2 {
+.lime.darken-2, .lime.nav-item.active {
   background-color: #afb42b !important; }
 
 .lime-text.text-darken-2 {
@@ -1139,7 +1139,7 @@
 .yellow-text.text-darken-1 {
   color: #fdd835 !important; }
 
-.yellow.darken-2 {
+.yellow.darken-2, .yellow.nav-item.active {
   background-color: #fbc02d !important; }
 
 .yellow-text.text-darken-2 {
@@ -1223,7 +1223,7 @@
 .amber-text.text-darken-1 {
   color: #ffb300 !important; }
 
-.amber.darken-2 {
+.amber.darken-2, .amber.nav-item.active {
   background-color: #ffa000 !important; }
 
 .amber-text.text-darken-2 {
@@ -1307,7 +1307,7 @@
 .orange-text.text-darken-1 {
   color: #fb8c00 !important; }
 
-.orange.darken-2 {
+.orange.darken-2, .orange.nav-item.active {
   background-color: #f57c00 !important; }
 
 .orange-text.text-darken-2 {
@@ -1391,7 +1391,7 @@
 .deep-orange-text.text-darken-1 {
   color: #f4511e !important; }
 
-.deep-orange.darken-2 {
+.deep-orange.darken-2, .deep-orange.nav-item.active {
   background-color: #e64a19 !important; }
 
 .deep-orange-text.text-darken-2 {
@@ -1475,7 +1475,7 @@
 .brown-text.text-darken-1 {
   color: #6d4c41 !important; }
 
-.brown.darken-2 {
+.brown.darken-2, .brown.nav-item.active {
   background-color: #5d4037 !important; }
 
 .brown-text.text-darken-2 {
@@ -1535,7 +1535,7 @@
 .blue-grey-text.text-darken-1 {
   color: #546e7a !important; }
 
-.blue-grey.darken-2 {
+.blue-grey.darken-2, .blue-grey.nav-item.active {
   background-color: #455a64 !important; }
 
 .blue-grey-text.text-darken-2 {
@@ -1595,7 +1595,7 @@
 .grey-text.text-darken-1 {
   color: #757575 !important; }
 
-.grey.darken-2, .darken-2.image-area, .darken-2.patient-information, .darken-2.footer-controls, .darken-2.chat-message {
+.grey.darken-2, .grey.nav-item.active, .nav-item.active.image-area, .nav-item.active.patient-information, .nav-item.active.footer-controls, .nav-item.active.chat-message, .darken-2.image-area, .darken-2.patient-information, .darken-2.footer-controls, .darken-2.chat-message {
   background-color: #616161 !important; }
 
 .grey-text.text-darken-2 {
@@ -7779,6 +7779,21 @@ nav .nav-icon {
 .active-users {
   align-self: center; }
 
+.info-button {
+  color: #666;
+  border: 2px solid #666;
+  border-radius: 50%;
+  height: 30px;
+  line-height: 24px;
+  text-align: center;
+  width: 30px;
+  display: inline-block;
+  font-weight: bold;
+  transition: all 0.2s; }
+  .info-button:hover {
+    color: #222;
+    border-color: #222; }
+
 .chat-message {
   padding: 20px 10px 10px;
   position: relative;
@@ -7810,3 +7825,6 @@ nav .nav-icon {
   width: 150px;
   display: inline-block;
   padding: 0 10px; }
+
+.stethoscope-controls .btn {
+  margin-right: 10px; }

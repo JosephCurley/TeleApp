@@ -57,3 +57,20 @@
 .active-users {
 	align-self: center;
 }
+
+.info-button {
+	color: #666;
+	border: 2px solid #666;
+	border-radius: 50%;
+	height: 30px;
+	line-height: 24px;
+	text-align: center;
+	width: 30px;
+	display: inline-block;
+	font-weight: bold;
+	transition: all 0.2s;
+	&:hover {
+		color: #222;
+		border-color: #222;
+	}
+}

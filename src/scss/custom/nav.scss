@@ -46,6 +46,9 @@ nav .nav-icon {
 
 .nav-item {
 	width: 100%;
+	&.active {
+		@extend .darken-2;
+	}
 
 	&:last-child {
 		margin-top: auto;
