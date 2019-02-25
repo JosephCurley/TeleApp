@@ -92,7 +92,8 @@
 				<div class="pill-pane application-pill-pane app-pill-pane-tab active">
 					<div class="pane-container">
 						<div class="window-container">
-							<div class="window-titlebar unselectable drag-handle" unselectable="on">
+							<div class="bar unselectable drag-handle" unselectable="on">
+								<div class="window-titlebar unselectable drag-handle" unselectable="on">
 								<div class="window-title">
 									<div class="window-title__text">
 										<i class="material-icons title-bar__icon">folder_shared</i>
@@ -109,9 +110,10 @@
 									</div>
 								</div>
 							</div>
+							</div>
 							<div class="document-container">
 								<div class="row">
-									<div class="input-field col s12 m6">
+									<div class="input-field col s12 m6 l4">
 										<select>
 											<option disabled value="">Selected</option>
 											<option selected value="1">Save to EMR</option>
@@ -120,16 +122,42 @@
 										</select>
 										<label>Action:</label>
 									</div>
+									<div class="col s6 m6 l4">
+										<form action="#">
+											<div class="file-field input-field">
+												<div class="btn">
+													<span>File</span>
+													<input type="file">
+												</div>
+												<div class="file-path-wrapper">
+													<input class="file-path validate" type="text">
+												</div>
+											</div>
+										</form>
+									</div>
+									<div class="col s6 m6 l4 input-field">
+										<p>
+											<label>
+												<input type="checkbox" checked="checked" />
+												<span>Select All</span>
+											</label>
+										</p>
+									</div>
 								</div>
 
-								<div class="row">
-									<div class="col s12 m4">
+								<div class="document-card__wrapper">
+									<div class="document-card__container">
 										<div class="card document-card">
 											<div class="card-image">
 												<div class="card-image__wrapper">
 													<img class="document-card-image" src="https://image.flaticon.com/icons/svg/337/337946.svg">
 												</div>
-												<a class="btn-floating btn-small halfway-fab waves-effect waves-light green"><i class="material-icons">add</i></a>
+												<p class="document__label-checkbox">
+													<label>
+													<input type="checkbox" checked="checked" />
+													<span></span>
+												</label>
+												</p>
 											</div>
 											<div class="card-content">
 												<span class="card-title--document">Vitals</span>
@@ -137,13 +165,18 @@
 										</div>
 									</div>
 
-									<div class="col s12 m4">
+									<div class="document-card__container">
 										<div class="card document-card">
 											<div class="card-image">
 												<div class="card-image__wrapper">
 													<img class="document-card-image" src="https://previews.123rf.com/images/tasnai123rf/tasnai123rf1603/tasnai123rf160300012/55469556-iv-in-arm.jpg">
 												</div>
-												<a class="btn-floating btn-small halfway-fab waves-effect waves-light grey darken-3"><i class="material-icons">remove</i></a>
+												<p class="document__label-checkbox">
+													<label>
+													<input type="checkbox" checked="checked" />
+													<span></span>
+												</label>
+												</p>
 											</div>
 											<div class="card-content">
 												<span class="card-title--document">Exam Camera High</span>
@@ -151,13 +184,18 @@
 										</div>
 									</div>
 
-									<div class="col s12 m4">
+									<div class="document-card__container">
 										<div class="card document-card">
 											<div class="card-image">
 												<div class="card-image__wrapper">
 													<img class="document-card-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaJO38rsBHKHtRWVSmNKoHc7nxXVSg19e-oeyoNPyglcTij_fa">
 												</div>
-												<a class="btn-floating btn-small halfway-fab waves-effect waves-light green"><i class="material-icons">add</i></a>
+												<p class="document__label-checkbox">
+													<label>
+													<input type="checkbox" checked="checked" />
+													<span></span>
+												</label>
+												</p>
 											</div>
 											<div class="card-content">
 												<span class="card-title--document">ExamCameraHigh1</span>
@@ -165,13 +203,18 @@
 										</div>
 									</div>
 
-									<div class="col s12 m4">
+									<div class="document-card__container">
 										<div class="card document-card">
 											<div class="card-image">
 												<div class="card-image__wrapper">
 													<img class="document-card-image" src="https://image.flaticon.com/icons/svg/337/337946.svg">
 												</div>
-												<a class="btn-floating btn-small halfway-fab waves-effect waves-light green"><i class="material-icons">add</i></a>
+												<p class="document__label-checkbox">
+													<label>
+													<input type="checkbox" checked="checked" />
+													<span></span>
+												</label>
+												</p>
 											</div>
 											<div class="card-content">
 												<span class="card-title--document">GeneralPatientForm</span>
@@ -179,13 +222,18 @@
 										</div>
 									</div>
 
-									<div class="col s12 m4">
+									<div class="document-card__container">
 										<div class="card document-card">
 											<div class="card-image">
 												<div class="card-image__wrapper">
 													<img class="document-card-image" src="https://image.flaticon.com/icons/svg/337/337946.svg">
 												</div>
-												<a class="btn-floating btn-small halfway-fab waves-effect waves-light green"><i class="material-icons">add</i></a>
+												<p class="document__label-checkbox">
+													<label>
+													<input type="checkbox" checked="checked" />
+													<span></span>
+												</label>
+												</p>
 											</div>
 											<div class="card-content">
 												<span class="card-title--document">Vitals</span>
@@ -193,13 +241,18 @@
 										</div>
 									</div>
 
-									<div class="col s12 m4">
+									<div class="document-card__container">
 										<div class="card document-card">
 											<div class="card-image">
 												<div class="card-image__wrapper">
 													<img class="document-card-image" src="https://image.flaticon.com/icons/svg/337/337946.svg">
 												</div>
-												<a class="btn-floating btn-small halfway-fab waves-effect waves-light green"><i class="material-icons">add</i></a>
+												<p class="document__label-checkbox">
+													<label>
+													<input type="checkbox" checked="checked" />
+													<span></span>
+												</label>
+												</p>
 											</div>
 											<div class="card-content">
 												<span class="card-title--document">Vitals</span>
