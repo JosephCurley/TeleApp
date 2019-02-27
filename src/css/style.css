@@ -2072,7 +2072,7 @@ a {
   box-shadow: none !important; }
 
 /* 2dp elevation modified*/
-.z-depth-1, .patient-information, .application-footer, .chat-message, nav, .card-panel, .card, .toast, .btn, .btn-large, .btn-small, .btn-floating, .dropdown-content, .collapsible, .sidenav {
+.z-depth-1, .application-footer, .chat-message, nav, .card-panel, .card, .toast, .btn, .btn-large, .btn-small, .btn-floating, .dropdown-content, .collapsible, .sidenav {
   -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2); }
 
@@ -7419,6 +7419,8 @@ input[type=range]::-ms-thumb {
   display: flex;
   flex-direction: row;
   min-width: 768px; }
+  .application-body.splash-screen__body {
+    min-width: 0; }
 
 .application-wrapper {
   width: 100%;
@@ -7718,13 +7720,15 @@ nav .nav-icon {
   display: flex;
   flex-basis: auto;
   flex-grow: 0;
-  margin: 0 20px 20px;
+  margin-bottom: 20px;
   z-index: 99999; }
 
 .patient-information {
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
   padding: 0 10px;
   margin-bottom: 0;
-  width: 100%; }
+  width: 100%;
+  min-height: 70px; }
   .patient-information .input-field {
     margin-top: 0; }
 
@@ -7832,7 +7836,7 @@ nav .nav-icon {
 
 .splash__logo {
   text-align: right;
-  width: 400px;
+  max-width: 400px;
   margin: 0 auto; }
 
 .splash__logo-text {
